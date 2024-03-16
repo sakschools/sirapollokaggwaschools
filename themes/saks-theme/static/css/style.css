@@ -150,6 +150,10 @@
   }
   
   @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 90%; /* Adjust width for tablets */
+      max-width: 768px; /* Set maximum width */
+    }
     .ag-courses_box {
         grid-template-columns: repeat(1, 1fr);
         padding: 42px 0 0 50px;
@@ -166,6 +170,12 @@
   
     .ag-courses-item_link {
       padding: 8px 12px; /* Adjust button padding */
+    }
+  }
+  @media (max-width: 576px) {
+    .ag-format-container {
+      width: 100%; /* Set width to full width of the screen */
+      border-radius: 0; /* Remove border radius for full-width appearance */
     }
   }
   
