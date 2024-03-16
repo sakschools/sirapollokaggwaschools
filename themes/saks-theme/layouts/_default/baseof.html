@@ -1,0 +1,27 @@
+<!-- layouts/_default/baseof.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "shared/head.html" . }}
+</head>
+<body>
+  <!-- Spinner -->
+  {{ partial "shared/spinner.html" . }}
+
+  <!-- Topbar -->
+  {{ partial "shared/topbar.html" . }}
+
+  <!-- Navbar -->
+  {{ partial "shared/nav.html" . }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- Footer -->
+  {{ partial "shared/footer.html" . }}
+
+  <!-- JavaScript Libraries and Template Javascript -->
+  {{ partial "shared/scripts.html" . }}
+</body>
+</html>

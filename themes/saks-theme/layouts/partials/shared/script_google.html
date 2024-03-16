@@ -1,0 +1,25 @@
+<!-- Script for checking success form -->
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        let submitted = false; // Flag to check if the form has been submitted
+        let form = document.getElementById('myForm');
+        let iframe = document.getElementById('hiddenConfirm');
+
+        form.onsubmit = function() {
+            submitted = true; // Set to true on form submit
+            console.log("Form submitted.");
+        };
+
+        iframe.onload = function() {
+            if (submitted) {
+                console.log("Iframe loaded after submission.");
+                window.location = '/success.html';
+            } else {
+                console.log("Iframe loaded without submission.");
+            }
+        };
+    });
+    </script>
+
+       <!-- end of script -->
+  <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;"></iframe>

@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ partial "sections/topheader.html" . }}
+  <div class="gallery-container">
+    <h2 class="text-center mb-4">Image Gallery</h2>
+    <div class="row">
+      {{ $gallery := readDir "static/img/gallery" }}
+      {{ range $gallery }}
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a href="{{ printf "/img/gallery/%s" .Name }}" data-fancybox="gallery">
+            <div class="gallery-item">
+              <!-- Display the image -->
+              <img src="{{ printf "/img/gallery/%s" .Name | relURL }}" class="img-fluid" alt="{{ .Name }}">
+            </div>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

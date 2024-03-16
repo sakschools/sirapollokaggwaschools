@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Sir Apollo Kaggwa Schools'
+theme = 'saks-theme'
+[params]
+defaultDescription = "Sir Apollo Kaggwa Schools are private primary schools registered with the ministry of education and sports with a UNEB centre number offering Education to Ugandan and non-Ugandan children based on the Ugandan Curriculum and equipping them with necessary life skills."
+

@@ -1,0 +1,52 @@
+{{ define "main" }}
+  <div class="container py-5">
+    <div class="row">
+      <!-- Post content -->
+      <div class="col-lg-8">
+        <article>
+          <!-- Post title -->
+          <h1 class="mb-4">{{ .Title }}</h1>
+          
+          <!-- Post metadata (date, author, etc.) -->
+          <p class="text-muted">{{ .Date.Format "January 2, 2006" }}</p>
+          
+          <!-- Thumbnail image -->
+          <img src="{{ .Params.thumbnail }}" class="img-fluid mb-4" alt="Thumbnail Image">
+          
+          <!-- Post content -->
+          <div class="post-content">
+            {{ .Content }}
+          </div>
+          
+          <!-- Back to list button -->
+          <a href="/news" class="btn btn-primary mt-4 btn-arrow"><i class="bi bi-arrow-left"></i> Back to Posts</a>
+        </article>
+      </div>
+      
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="mb-4">
+          <!-- Social media icons -->
+          <h3>Follow Us</h3>
+          <ul class="list-unstyled d-flex justify-content-start">
+            <li class="me-3"><a href="#" class="text-decoration-none"><i class="bi bi-whatsapp" style="color: #25D366; font-size: 2rem;"></i></a></li>
+            <li class="me-3"><a href="#" class="text-decoration-none"><i class="bi bi-facebook" style="color: #3b5998; font-size: 2rem;"></i></a></li>
+            <li class="me-3"><a href="#" class="text-decoration-none"><i class="bi bi-twitter" style="color: #1da1f2; font-size: 2rem;"></i></a></li>
+            <li class="me-3"><a href="#" class="text-decoration-none"><i class="bi bi-instagram" style="color: #c13584; font-size: 2rem;"></i></a></li>
+            <li><a href="#" class="text-decoration-none"><i class="bi bi-youtube" style="color: #FF0000; font-size: 2rem;"></i></a></li>
+          </ul>
+        </div>
+        
+        <!-- Twitter feed -->
+        <div class="mb-4">
+          <h3>Twitter Feed</h3>
+          <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/SirApollo_CPS?ref_src=twsrc%5Etfw">Tweets by SirApollo_CPS</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Latest news section -->
+  {{ partial "sections/latest-news.html" . }}
+{{ end }}

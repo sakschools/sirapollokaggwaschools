@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Sir Apollo Kaggwa Schools</title>
+    <link>https://example.org/news/</link>
+    <description>Recent content in News on Sir Apollo Kaggwa Schools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Mar 2024 16:11:21 +0300</lastBuildDate>
+    <atom:link href="https://example.org/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Check This Out</title>
+      <link>https://example.org/posts/check-this-out/</link>
+      <pubDate>Wed, 13 Mar 2024 16:11:21 +0300</pubDate>
+      <guid>https://example.org/posts/check-this-out/</guid>
+      <description>Here we add some paragraph on the posts we have submitted and this is the paragraph am talking about</description>
+    </item>
+    <item>
+      <title>Latest</title>
+      <link>https://example.org/posts/latest/</link>
+      <pubDate>Wed, 13 Mar 2024 11:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/latest/</guid>
+      <description>Here you can write the content of your post. You can include text, images, links, and other elements as needed. For images, you can reference them using Markdown syntax, and Hugo will handle generating the necessary HTML.&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus magna. Donec eu sem ut arcu pretium aliquam vel non magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</description>
+    </item>
+    <item>
+      <title>Graduation Ceremony</title>
+      <link>https://example.org/posts/graduation/</link>
+      <pubDate>Wed, 13 Mar 2024 10:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/graduation/</guid>
+      <description>Here you can write the content of your post. You can include text, images, links, and other elements as needed. For images, you can reference them using Markdown syntax, and Hugo will handle generating the necessary HTML.&#xA;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget lectus magna. Donec eu sem ut arcu pretium aliquam vel non magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</description>
+    </item>
+    <item>
+      <title>Opening Ceremony</title>
+      <link>https://example.org/posts/oppening/</link>
+      <pubDate>Wed, 13 Mar 2024 10:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/oppening/</guid>
+      <description>Here you can write the content of your post. You can include text, images, links, and other elements as tellus bibendum lacinia.</description>
+    </item>
+  </channel>
+</rss>
