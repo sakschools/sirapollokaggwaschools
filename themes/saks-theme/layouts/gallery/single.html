@@ -2,7 +2,7 @@
   {{ partial "sections/topheader.html" . }}
   <div class="gallery-container">
     <h2 class="text-center mb-4">Image Gallery</h2>
-    <div class="row">
+    <div class="row gallery-row">
       {{ $gallery := readDir "static/img/gallery" }}
       {{ range $gallery }}
         <div class="col-lg-4 col-md-6 mb-4">

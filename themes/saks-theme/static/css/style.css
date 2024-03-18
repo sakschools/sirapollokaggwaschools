@@ -1131,4 +1131,13 @@
       row-gap: 15px;
     }
   }
-  
+  /** Gallery styles **/
+  .gallery-row {
+    --bs-gutter-x: 0; /* Set the gutter to 0 or any other value you desire */
+}
+
+/* Apply the custom row class to the specific row */
+.row.gallery-row {
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
