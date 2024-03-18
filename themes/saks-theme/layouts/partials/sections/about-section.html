@@ -7,16 +7,16 @@
                 <div id="aboutCarousel" class="carousel slide about-carousel" data-bs-ride="carousel"> <!-- Added about-carousel class -->
                     <div class="carousel-inner" style="max-height: 600px; overflow: hidden;">
                         <div class="carousel-item active">
-                            <img src="/img/about1.jpg" class="d-block w-100" alt="About Image 1">
+                            <img src="/img/about1.webp" class="d-block w-100" alt="About Image 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/about2.jpg" class="d-block w-100" alt="About Image 2">
+                            <img src="/img/about2.webp" class="d-block w-100" alt="About Image 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/about3.jpg" class="d-block w-100" alt="About Image 3">
+                            <img src="/img/about3.webp" class="d-block w-100" alt="About Image 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="/img/about4.jpg" class="d-block w-100" alt="About Image 4">
+                            <img src="/img/about4.webp" class="d-block w-100" alt="About Image 4">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
@@ -33,10 +33,10 @@
             <!-- Content Column -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="h-100">
-                    <h6 class="text-primary text-uppercase mb-2">About Sir Apollo Kaggwa Schools</h6>
-                    <h1 class="display-6 mb-4">We Ignite Academic Excellence</h1>
-                    <p>Sir Apollo Kaggwa Schools are private primary schools registered with the ministry of education and sports with a UNEB centre number offering Education to Ugandan and non-Ugandan children based on the Ugandan Curriculum and equipping them with necessary life skills.</p>
-                    <p class="mb-4">We provide a stimulating and credible learning environment which will produce dynamic and talented young Ugandan citizens and ensure all learners are equipped to meet the challenges of life”.</p>
+                    <h6 class="text-primary text-uppercase mb-2">About {{ .Site.Title}}</h6>
+                    <h1 class="display-6 mb-4">{{ .Site.Params.school.motto}}</h1>
+                    <p>{{ .Site.Params.school.summary1}}</p>
+                    <p class="mb-4">{{ .Site.Params.school.summary2}}</p>
                     
                     <div class="row g-4">
                         <div class="col-sm-6">

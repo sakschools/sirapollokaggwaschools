@@ -1,23 +1,11 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.sirapollokaggwaschools.co.ug/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Sir Apollo Kaggwa Schools'
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
-
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
-
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.116.0"
+[params]
+  [params.social]
+    email = 'info@sirapollokaggwaschools.co.ug'
+    whatsapp = 'https://wa.me/256701195558'
+    facebook = 'https://www.facebook.com/SakKitintale'
+    twitter = 'https://twitter.com/SirApollo_CPS?s=20'
+    youtube = 'https://www.youtube.com/@sirapollokaggwaschools3084?si=EvOVGMKWSkRHu_pv'
