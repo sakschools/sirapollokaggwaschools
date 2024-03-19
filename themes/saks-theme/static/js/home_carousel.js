@@ -1,43 +1,24 @@
-// Step 1: Get DOM
-let nextDom = document.getElementById('next');
-let prevDom = document.getElementById('prev');
-let carouselDom = document.querySelector('.carousel');
-let SliderDom = carouselDom.querySelector('.carousel .list');
+document.addEventListener('DOMContentLoaded', function() {
+    // Set autoplay interval in milliseconds
+    const interval = 5000; // 5 seconds
 
-let timeAutoNext = 7000;
-
-nextDom.onclick = function () {
-    showSlider('next');
-}
-
-prevDom.onclick = function () {
-    showSlider('prev');
-}
-
-let runTimeOut;
-let runNextAuto = setTimeout(() => {
-    nextDom.click(); // Corrected from next.click() to nextDom.click()
-}, timeAutoNext)
-
-function showSlider(type) {
-    let SliderItemsDom = SliderDom.children;
-
-    if (type === 'next') {
-        SliderDom.appendChild(SliderItemsDom[0]);
-        carouselDom.classList.add('next');
-    } else {
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        carouselDom.classList.add('prev');
+    // Function to advance the carousel to the next slide
+    function nextSlide() {
+        const carousel = document.getElementById('carouselExampleAutoplaying');
+        const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+        carouselInstance.next();
     }
 
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-        carouselDom.classList.remove('next');
-        carouselDom.classList.remove('prev');
-    }, 300);
+    // Start autoplay on page load
+    let autoplayInterval = setInterval(nextSlide, interval);
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
-        nextDom.click(); // Corrected from next.click() to nextDom.click()
-    }, timeAutoNext)
-}
+    // Pause autoplay when mouse is hovered over the carousel
+    carouselExampleAutoplaying.addEventListener('mouseenter', function() {
+        clearInterval(autoplayInterval);
+    });
+
+    // Resume autoplay when mouse leaves the carousel
+    carouselExampleAutoplaying.addEventListener('mouseleave', function() {
+        autoplayInterval = setInterval(nextSlide, interval);
+    });
+});

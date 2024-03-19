@@ -1,37 +1,65 @@
 <div class="container">
     <div class="row">
         <!-- Column for TikTok feed -->
-        <div class="col-md-6">
+        <div class="col-md-6" id="tiktok-container">
             <h2 class="mb-4">Our TikTok Feed</h2>
             <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sirapollokaggwaschools" data-unique-id="sirapollokaggwaschools" data-embed-type="creator" style="max-width: 780px; min-width: 288px;">
                 <section>
                     <a target="_blank" href="https://www.tiktok.com/@sirapollokaggwaschools?refer=creator_embed">@sirapollokaggwaschools</a>
                 </section>
             </blockquote>
-            <script async src="https://www.tiktok.com/embed.js"></script>
         </div>
         <!-- Column for Twitter feed -->
-        <div class="col-md-6">
+        <div class="col-md-6" id="twitter-container">
             <h2 class="mb-4">Our Twitter Feed</h2>
             <a class="twitter-timeline" data-width="780" data-height="480" href="https://twitter.com/SirApollo_CPS?ref_src=twsrc%5Etfw">Tweets by SirApollo_CPS</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
 </div>
+
 <!-- Container for the embedded YouTube videos -->
-<div class="container">
+<div class="container" id="youtube-container">
     <div class="row">
         <!-- First column with video 1 -->
         <div class="col-md-6">
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dRhYX0ZsoWM?si=_8GZ36r82v1dhI-K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/dRhYX0ZsoWM?si=_8GZ36r82v1dhI-K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
         <!-- Second column with video 2 -->
         <div class="col-md-6">
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/So01aRemn50?si=PVVSFJIkL3siszLO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/So01aRemn50?si=PVVSFJIkL3siszLO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.id === 'tiktok-container') {
+                    const script = document.createElement('script');
+                    script.src = 'https://www.tiktok.com/embed.js';
+                    document.body.appendChild(script);
+                } else if (entry.target.id === 'twitter-container') {
+                    const script = document.createElement('script');
+                    script.src = 'https://platform.twitter.com/widgets.js';
+                    script.charset = 'utf-8';
+                    document.body.appendChild(script);
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    observer.observe(document.getElementById('tiktok-container'));
+    observer.observe(document.getElementById('twitter-container'));
+</script>
