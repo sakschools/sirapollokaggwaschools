@@ -524,8 +524,9 @@
 </div>
 
 
-<div class="container" id="youtube-container">
+<div class="container" id="facebook-container">
     <div class="row">
+        
         
         <div class="col-md-6">
             <div class="video-container">
@@ -533,13 +534,17 @@
             </div>
         </div>
         
+        
         <div class="col-md-6">
+            <h2 class="mb-4">Our Youtube Feed</h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/So01aRemn50?si=PVVSFJIkL3siszLO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
     </div>
 </div>
+
+
 
 <script>
     const options = {
@@ -551,12 +556,14 @@
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.id === 'tiktok-container') {
+                if (entry.target.id === 'tiktok-container' && !document.getElementById('tiktok-script')) {
                     const script = document.createElement('script');
+                    script.id = 'tiktok-script';
                     script.src = 'https://www.tiktok.com/embed.js';
                     document.body.appendChild(script);
-                } else if (entry.target.id === 'twitter-container') {
+                } else if (entry.target.id === 'twitter-container' && !document.getElementById('twitter-script')) {
                     const script = document.createElement('script');
+                    script.id = 'twitter-script';
                     script.src = 'https://platform.twitter.com/widgets.js';
                     script.charset = 'utf-8';
                     document.body.appendChild(script);
@@ -569,7 +576,6 @@
     observer.observe(document.getElementById('tiktok-container'));
     observer.observe(document.getElementById('twitter-container'));
 </script>
-
 
   </main>
 

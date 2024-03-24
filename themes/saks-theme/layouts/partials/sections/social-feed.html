@@ -17,17 +17,28 @@
     </div>
 </div>
 
-<!-- Container for the embedded YouTube videos -->
-<div class="container" id="youtube-container">
+<!-- Container for the embedded Facebook video -->
+<div class="container" id="facebook-container">
     <div class="row">
+        {{ if .Site.Params.mainSchool}}
         <!-- First column with video 1 -->
         <div class="col-md-6">
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/dRhYX0ZsoWM?si=_8GZ36r82v1dhI-K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
-        <!-- Second column with video 2 -->
+        {{ else }}
+        <!-- First column with Facebook video -->
         <div class="col-md-6">
+            <h2 class="mb-4">Our Facebook Feed</h2>
+            <div class="video-container">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100031656163894%2Fvideos%2F911916250110856%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy"></iframe>
+            </div>
+        </div>
+        {{ end }}
+        <!-- Second column with video 2 (unchanged) -->
+        <div class="col-md-6">
+            <h2 class="mb-4">Our Youtube Feed</h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/So01aRemn50?si=PVVSFJIkL3siszLO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
@@ -35,6 +46,8 @@
     </div>
 </div>
 
+
+<!-- script loading logic to load TikTok and Twitter scripts only when necessary -->
 <script>
     const options = {
         root: null,
@@ -45,12 +58,14 @@
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.id === 'tiktok-container') {
+                if (entry.target.id === 'tiktok-container' && !document.getElementById('tiktok-script')) {
                     const script = document.createElement('script');
+                    script.id = 'tiktok-script';
                     script.src = 'https://www.tiktok.com/embed.js';
                     document.body.appendChild(script);
-                } else if (entry.target.id === 'twitter-container') {
+                } else if (entry.target.id === 'twitter-container' && !document.getElementById('twitter-script')) {
                     const script = document.createElement('script');
+                    script.id = 'twitter-script';
                     script.src = 'https://platform.twitter.com/widgets.js';
                     script.charset = 'utf-8';
                     document.body.appendChild(script);

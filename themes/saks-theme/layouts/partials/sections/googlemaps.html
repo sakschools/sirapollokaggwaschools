@@ -2,12 +2,59 @@
 <div class="container py-5">
     <div class="card">
         <div class="card-header">
-            <h5 class="card-title">{{ .Site.Title}} Location</h5>
+            <h5 class="card-title">{{ .Site.Title }} Location</h5>
         </div>
         <div class="card-body">
+            {{ if eq .Site.Params.school.name "fairways" }}
             <div class="embed-responsive">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.743139604138!2d32.64298437369946!3d0.3517345639735293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db982e886c173%3A0x7e1b331726b70c6!2sFairways%20Primary%20School!5e0!3m2!1sen!2sug!4v1711243886247!5m2!1sen!2sug" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "kiira" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7233265246236!2d32.63426617369933!3d0.39537536390282335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db70bdc4c6819%3A0x25bf4948f50bd6ac!2sSir%20Apollo%20Kaggwa%20Primary%20School-Kira!5e0!3m2!1sen!2sug!4v1711284924198!5m2!1sen!2sug" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "kisaasi" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7291066068656!2d32.590540073699415!3d0.38315786392293166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db08357629835%3A0x8c40313db69df633!2sSir%20Apollo%20Kaggwa%20Primary%20School%20-%20Kisaasi!5e0!3m2!1sen!2sug!4v1711284720932!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "kitintale" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.5184624900885!2d32.6292663861032!3d0.3118281274646828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbeaebc127f4b%3A0xf3e23f8189a56fd9!2sKitintale%2C%20Kampala!5e0!3m2!1sen!2sug!4v1711285306192!5m2!1sen!2sug" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "kyengera" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.765530695191!2d32.49854157369968!3d0.2947378640611878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da30e50155555%3A0xd3b2f4f22980f8f!2sKyengera%20Parents%20Primary%20School!5e0!3m2!1sen!2sug!4v1711285080034!5m2!1sen!2sug" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "kyengera-mugongo" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.331000431775!2d32.504775008217564!3d0.284112850524285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177da2e26d44ed0f%3A0x79a0e4f8ca2421ca!2sMugongo%20Road%2C%20Kyengera!5e0!3m2!1sen!2sug!4v1711285229263!5m2!1sen!2sug" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "mengo" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7600892968558!2d32.553701173699466!3d0.3095557640389164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbca3089c671d%3A0x7ac98c9c0a2ff8bb!2sSir%20Apollo%20Kaggwa%20Primary%20School!5e0!3m2!1sen!2sug!4v1711284448938!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "nakasero" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.756443743895!2d32.57600457369951!3d0.31909856402437176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb0d21e64521%3A0x4dd2bafa824c3198!2sSir%20Apollo%20Kagwa%20Primary%20School%20Nakasero!5e0!3m2!1sen!2sug!4v1711284625971!5m2!1sen!2sug" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "old-kampala" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7570294722154!2d32.56494337369959!3d0.3175846640266845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbdbe10423aed%3A0x6c5568c41ee01781!2sSir%20Apollo%20kaggwa%20boarding%20primary%20school%20old%20kampala!5e0!3m2!1sen!2sug!4v1711284320757!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
+            {{ if eq .Site.Params.school.name "winston" }}
+            <div class="embed-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.740218032572!2d32.563180473699525!3d0.35850376396276673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbbcfaff0ad3%3A0xefc7f7a39aaac32f!2sWinston%20Nursery%20and%20primary%20school!5e0!3m2!1sen!2sug!4v1711284998241!5m2!1sen!2sug" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            {{ end }}
         </div>
     </div>
 </div>

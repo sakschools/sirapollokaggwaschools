@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{ partial "sections/topheader.html" . }}
-  {{ partial "sections/main-about.html" . }}
+  <div class="container">
+    {{ .Content}}
+  </div>
   {{ partial "sections/testimonial.html" . }}
 {{ end }}
-  
