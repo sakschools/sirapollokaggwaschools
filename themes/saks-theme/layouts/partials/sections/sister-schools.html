@@ -1,6 +1,10 @@
   <!-- Section Start: Sister Schools -->
   <div class="ag-format-container">
+    {{ if .Site.Params.mainSchool}}
     <h2>Our Branches</h2>
+    {{ else }}
+    <h2>Visit Our Other Sir Apollo Kaggwa Schools</h2>
+    {{ end }}
     <div class="ag-courses_box">
       <div class="ag-courses_item">
         <a href="#" class="ag-courses-item_link">
