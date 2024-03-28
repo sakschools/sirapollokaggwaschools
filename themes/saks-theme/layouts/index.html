@@ -1,11 +1,20 @@
 {{ define "main" }}
 
+{{ if .Site.Params.mainSchool}}
 {{ partial "sections/carousel.html" . }}
 {{ partial "sections/sister-schools.html" . }}
 {{ partial "sections/about-section.html" . }}
 {{ partial "sections/latest-news.html" . }}
 {{ partial "sections/gallery-row.html" . }}
-
-
 {{ partial "sections/social-feed.html" . }}
+{{ else }}
+{{ partial "sections/carousel-sister-schools.html" . }}
+{{ partial "sections/about-section.html" . }}
+{{ partial "sections/hm-message.html" . }}
+{{ partial "sections/latest-news.html" . }}
+{{ partial "sections/googlemaps.html" . }}
+{{ partial "sections/social-feed.html" . }}
+{{ partial "sections/sister-schools.html" . }}
+{{ end }}
+
 {{ end }}
