@@ -1,27 +1,27 @@
-<div class="container">
-    <div class="row">
+<div class="container p-3 mt-5 border border-danger border-2">
+    <div class="row" style="display: flex;">
         <!-- Column for TikTok feed -->
-        <div class="col-md-6" id="tiktok-container">
+        <div class="col-md-6" id="tiktok-container" style="display: flex; flex-direction: column;">
             <h2 class="mb-4">Our TikTok Feed</h2>
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sirapollokaggwaschools" data-unique-id="sirapollokaggwaschools" data-embed-type="creator" style="max-width: 780px; min-width: 288px;">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sirapollokaggwaschools" data-unique-id="sirapollokaggwaschools" data-embed-type="creator" style="flex-grow: 1;">
                 <section>
                     <a target="_blank" href="https://www.tiktok.com/@sirapollokaggwaschools?refer=creator_embed">@sirapollokaggwaschools</a>
                 </section>
             </blockquote>
         </div>
         <!-- Column for Twitter feed -->
-        <div class="col-md-6" id="twitter-container">
+        <div class="col-md-6" id="twitter-container" style="display: flex; flex-direction: column;">
             <h2 class="mb-4">Our Twitter Feed</h2>
-            <a class="twitter-timeline" data-width="780" data-height="480" href="https://twitter.com/SirApollo_CPS?ref_src=twsrc%5Etfw">Tweets by SirApollo_CPS</a>
+            <a class="twitter-timeline" data-width="780" data-height="480" href="https://twitter.com/SirApollo_CPS?ref_src=twsrc%5Etfw" style="flex-grow: 1;">Tweets by SirApollo_CPS</a>
         </div>
     </div>
-</div>
-
-<!-- Container for the embedded Facebook video -->
+    
+    <!-- Container for the embedded Facebook video -->
 <div class="container" id="facebook-container">
     <div class="row">
         {{ if .Site.Params.mainSchool}}
         <!-- First column with video 1 -->
+        <h2 class="mb-4 text-center">Our Youtube Feed</h2>
         <div class="col-md-6">
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/dRhYX0ZsoWM?si=_8GZ36r82v1dhI-K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
@@ -38,13 +38,15 @@
         {{ end }}
         <!-- Second column with video 2 (unchanged) -->
         <div class="col-md-6">
-            <h2 class="mb-4">Our Youtube Feed</h2>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/So01aRemn50?si=PVVSFJIkL3siszLO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
         </div>
     </div>
 </div>
+</div>
+
+
 
 
 <!-- script loading logic to load TikTok and Twitter scripts only when necessary -->
