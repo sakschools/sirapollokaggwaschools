@@ -1,4 +1,4 @@
 ---
-title: "Admissions"
+title: "Application Form"
 type: admission
 ---
