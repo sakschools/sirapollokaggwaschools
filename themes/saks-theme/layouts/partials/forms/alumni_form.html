@@ -22,7 +22,7 @@
   <form id="myForm" action="https://docs.google.com/forms/d/e/1FAIpQLSe3lY03IMaK1dZTTSL3XvZCvtdOAAyZyzRHC_u2CxZoZmaoGQ/formResponse" class="form" method="POST" target="hiddenConfirm">
       <div class="column">
           <div class="input-box">
-              <label>Former Student Name <span>*</span></label>
+              <label>Name of Former Student <span>*</span></label>
               <input type="text" placeholder="Enter Former Student name" required name="entry.1530873410" />
           </div>
       </div>
@@ -44,6 +44,20 @@
               </select>
           </div>
       </div>
+      <label>Please indicate Years of Presence in Sir Apollo Kaggwa School <span>*</span></label>
+      <div class="column">
+        <div class="select-box">
+            <select name="entry.1630867065" required>
+                <option value="" disabled selected hidden>Class Of</option>
+            </select>
+        </div>
+        <div class="select-box">
+            <select name="entry.353897742" required>
+                <option value="" disabled selected hidden>To</option>
+            </select>
+        </div>
+    </div>
+    
       <div class="column">
           <div class="input-box">
               <label>Contact Number <span>*</span></label>
@@ -58,6 +72,52 @@
           <label>Email <span>*</span></label>
           <input name="entry.1380497666" type="email" placeholder="Enter Email" required />
       </div>
+      <div class="column">
+        <div class="input-box">
+            <label>Current Address <span>*</span></label>
+            <input name="entry.377755853" type="text" placeholder="Enter Current Address" required />
+        </div>
+        <div class="input-box">
+            <label>Current Responsibilty <span>*</span></label>
+            <input name="entry.1559494065" type="text" placeholder="Enter Current Responsibility" />
+        </div>
+    </div>
+    <div class="declaration-box">
+        <p>By submitting this form, I hereby declare that I am a former student of Sir Apollo Kaggwa Schools. I understand that the information provided will be used for alumni registration purposes only.</p>
+        <div class="declaration-options">
+            <div class="option">
+                <input type="radio" id="confirm" name="entry.1457461731" value="Confirm" required />
+                <label for="confirm">Confirm <span>*</span></label>
+            </div>
+            <div class="option">
+                <input type="radio" id="decline" name="entry.1457461731" value="Decline" />
+                <label for="decline">Decline</label>
+            </div>
+        </div>
+    </div>
+    
       <button type="submit">Submit</button>
   </form>
 </section>
+<script>
+    // Get current year
+    var currentYear = new Date().getFullYear();
+
+    // Populate start year dropdown
+    var startYearSelect = document.querySelector('select[name="entry.1630867065"]');
+    for (var year = 1996; year <= currentYear; year++) {
+        var option = document.createElement('option');
+        option.value = year;
+        option.text = year;
+        startYearSelect.appendChild(option);
+    }
+
+    // Populate end year dropdown
+    var endYearSelect = document.querySelector('select[name="entry.353897742"]');
+    for (var year = 1996; year <= currentYear; year++) {
+        var option = document.createElement('option');
+        option.value = year;
+        option.text = year;
+        endYearSelect.appendChild(option);
+    }
+</script>
