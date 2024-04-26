@@ -260,8 +260,23 @@
                 <a class="btn btn-link" href="/news">News</a>
             </div>
             <div class="col-lg-3 col-md-6">
-                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-2bb3a736-ede3-45cc-a518-eb2f0946da72" data-elfsight-app-lazy></div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <i class="fa fa-chart-bar" aria-hidden="true"></i> Website Visitors
+                      </h5>
+                      <p class="card-text" id="visits">0</p>
+                    </div>
+                  </div>
+                  
+                  <script>
+                    function cb(response) {
+                      document.getElementById('visits').innerText = response.value;
+                    }
+                  </script>
+                  
+                  <script async src="https://api.countapi.xyz/hit/www.sirapollokaggwaschools.co.ug/visits?callback=cb"></script>
+                  
                 <h6 class="text-white mt-4 mb-3">Follow Us</h6>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-light me-0" href="https://wa.me/256782626142"><i class="fab fa-whatsapp"></i></a>
