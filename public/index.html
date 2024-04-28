@@ -406,6 +406,25 @@
           <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
             <div class="text-center p-4 pt-0">
               <div class="d-inline-block bg-danger text-white fs-5 py-1 px-4 mb-4">Trending News</div>
+              <h5 class="mb-3">Sak Schools Shines at Fr Grimes National Chess Championship 2024 Qualifiers</h5>
+              <p>Good morning, dear parents and community! Today, we proudly witness a significant milestone as our talented pupils represent Sir Apollo Kaggwa …</p>
+              <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>April 28, 2024</li>
+              </ol>
+            </div>
+            <div class="position-relative mt-auto">
+              <img class="img-fluid" src="/img/posts/sak-schools-shines-at-fr-grimes-national-chess-championship-2024-qualifiers.webp" alt="Sak Schools Shines at Fr Grimes National Chess Championship 2024 Qualifiers">
+              <div class="courses-overlay">
+                <a class="btn btn-outline-primary border-2" href="https://www.sirapollokaggwaschools.co.ug/posts/sak-schools-shines-at-fr-grimes-national-chess-championship-2024-qualifiers/">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
+            <div class="text-center p-4 pt-0">
+              <div class="d-inline-block bg-danger text-white fs-5 py-1 px-4 mb-4">Trending News</div>
               <h5 class="mb-3">Ahirire Faith Crowned Little Miss Tourism 2023 2024</h5>
               <p>Our Pupil Ahirire Faith Crowned Little Miss Tourism 2023-2024 We are proud to announce that our pupil, Ahirire Faith, has been crowned Little Miss …</p>
               <ol class="breadcrumb justify-content-center mb-0">
@@ -435,25 +454,6 @@
               <img class="img-fluid" src="/img/posts/sir-apollo-kaggwa-scools-kisaasi-carbinet-courtesy-visit-speaker-parliament.webp" alt="Sir Apollo Kaggwa Scools Kisaasi Carbinet Courtesy Visit Speaker Parliament">
               <div class="courses-overlay">
                 <a class="btn btn-outline-primary border-2" href="https://www.sirapollokaggwaschools.co.ug/posts/sir-apollo-kaggwa-scools-kisaasi-carbinet-courtesy-visit-speaker-parliament/">Read More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
-            <div class="text-center p-4 pt-0">
-              <div class="d-inline-block bg-danger text-white fs-5 py-1 px-4 mb-4">Trending News</div>
-              <h5 class="mb-3">Inter Sir Apollo Kaggwa Schools Swimming Gala</h5>
-              <p>Inter Sir Apollo Kaggwa Schools Swimming Gala We are excited to announce the upcoming Inter Sir Apollo Kaggwa Schools Swimming Gala scheduled to take …</p>
-              <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>March 18, 2024</li>
-              </ol>
-            </div>
-            <div class="position-relative mt-auto">
-              <img class="img-fluid" src="/img/posts/inter-sir-apollo-kaggwa-schools-swimming-gala.webp" alt="Inter Sir Apollo Kaggwa Schools Swimming Gala">
-              <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2" href="https://www.sirapollokaggwaschools.co.ug/posts/inter-sir-apollo-kaggwa-schools-swimming-gala/">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -655,17 +655,9 @@
                       <h5 class="card-title">
                         <i class="fa fa-chart-bar" aria-hidden="true"></i> Website Visitors
                       </h5>
-                      <p class="card-text" id="visits">0</p>
+                      <p class="card-text" id="visits"> </p>
                     </div>
                   </div>
-                  
-                  <script>
-                    function cb(response) {
-                      document.getElementById('visits').innerText = response.value;
-                    }
-                  </script>
-                  
-                  <script async src="https://api.countapi.xyz/hit/www.sirapollokaggwaschools.co.ug/visits?callback=cb"></script>
                   
                 <h6 class="text-white mt-4 mb-3">Follow Us</h6>
                 <div class="d-flex pt-2">
@@ -724,4 +716,49 @@
 <script src="/js/main.js"></script>
 
 </body>
+<script type="module">
+  
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+  import { getDatabase } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
+
+  
+  const firebaseConfig = {
+    apiKey: "AIzaSyCmjFmpH9KPKhmUYlSV_3javZlC29ObKqg",
+    authDomain: "saks-views.firebaseapp.com",
+    projectId: "saks-views",
+    storageBucket: "saks-views.appspot.com",
+    messagingSenderId: "34657519398",
+    appId: "1:34657519398:web:a583c0c4b9519aa9ef23e7"
+  };
+
+  
+  const app = initializeApp(firebaseConfig);
+
+  function get_viewers_ip(json){
+    viewers_ip = json.ip;
+    
+    count_view(viewers_ip);
+  }
+
+  function count_view(viewers_ip){
+    var views;
+    ip_to_string = viewers_ip.Tostring();
+
+    for(var i, i = 0; i < ip_to_string.length; i++){
+      ip_to_string = ip_to_string.replace(".","-");
+    }
+
+    firebase.database().ref().child("page_views/" + ip_to_string).set({
+      viewers_ip: viewers_ip
+    });
+
+    firebase.database().ref().child("page_views").on("value", function(snapshot){
+      views = snapshot.numChildren();
+      document.getElementById("visits").innerHTML = views;
+    });
+  }
+
+
+</script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"></script>
 </html>
