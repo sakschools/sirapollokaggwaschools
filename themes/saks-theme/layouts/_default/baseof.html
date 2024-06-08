@@ -34,54 +34,9 @@
 <noscript>You need to <a href="https://www.openwidget.com/enable-javascript" rel="noopener nofollow">enable JavaScript</a> to use the communication tool powered by <a href="https://www.openwidget.com/" rel="noopener nofollow" target="_blank">OpenWidget</a></noscript>
 <!-- End of OpenWidget code -->
 
-  {{ partial "shared/cloudflare-ananlystics.html" . }}
-
   <!-- JavaScript Libraries and Template Javascript -->
   {{ partial "shared/scripts.html" . }}
 </body>
-<script type="module">
-  // Import Firebase App and Database modules
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
-  import { getDatabase } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js";
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "",
-    authDomain: "saks-views.firebaseapp.com",
-    projectId: "saks-views",
-    storageBucket: "saks-views.appspot.com",
-    messagingSenderId: "34657519398",
-    appId: "1:34657519398:web:a583c0c4b9519aa9ef23e7"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-
-  function get_viewers_ip(json){
-    viewers_ip = json.ip;
-    // Count View with ip
-    count_view(viewers_ip);
-  }
-
-  function count_view(viewers_ip){
-    var views;
-    ip_to_string = viewers_ip.Tostring();
-
-    for(var i, i = 0; i < ip_to_string.length; i++){
-      ip_to_string = ip_to_string.replace(".","-");
-    }
-
-    firebase.database().ref().child("page_views/" + ip_to_string).set({
-      viewers_ip: viewers_ip
-    });
-
-    firebase.database().ref().child("page_views").on("value", function(snapshot){
-      views = snapshot.numChildren();
-      document.getElementById("visits").innerHTML = views;
-    });
-  }
-
-
-</script>
+ <!-- View Counter -->
 <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=get_viewers_ip"></script>
 </html>
