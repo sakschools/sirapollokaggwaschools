@@ -16,10 +16,10 @@ Our goal is to provide a supportive and dynamic learning environment, fostering 
 
 We understand that choosing the right school for your child is a significant decision. Below are some glimpses into our welcoming school environment, including facilities and insights from our staff, parents, and students.
 
-![Parents and Students Enjoying Breakfast](/img/posts/registration-2025-img1.webp)
+{{< post-img "/img/posts/registration-2025-img1.webp">}}
 *Our guests enjoying breakfast during a warm welcome event for prospective students and parents.*
 
-![Vibrant Learning Environment for Kids](/img/posts/registration-2025-img2.webp)
+{{< post-img "/img/posts/registration-2025-img2.webp">}}
 *One of our teachers engaging in creative play activities with young students.*
 
 ### Video Tour of Our Kira Campus Admissions Process
