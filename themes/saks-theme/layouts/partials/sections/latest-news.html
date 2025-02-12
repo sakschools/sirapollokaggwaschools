@@ -1,33 +1,38 @@
-<div class="container-xxl py-4 ">
-    <div class="container border border-info border-2 p-3">
-      <div class="row g-4 justify-content-center">
-        {{ range first 3 .Site.RegularPages.ByDate.Reverse }}
-        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container-xxl py-4">
+  <div class="container border border-info border-2 p-3">
+    <div class="row g-4 justify-content-center">
+      {{ range first 3 .Site.RegularPages.ByDate.Reverse }}
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- Make the whole card clickable -->
+        <a href="{{ .Permalink }}" class="text-decoration-none">
           <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
             <div class="text-center p-4 pt-0">
               <div class="d-inline-block bg-danger text-white fs-5 py-1 px-4 mb-4">Trending News</div>
-              <h5 class="mb-3">{{ .Title }}</h5>
+              <!-- Make the title clickable -->
+              <h5 class="mb-3 text-primary">{{ .Title }}</h5>
               <p>{{ .Summary | truncate 150 }}</p>
               <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item small"><i class="fa fa-calendar-alt text-primary me-2"></i>{{ .Date.Format "January 2, 2006" }}</li>
+                <li class="breadcrumb-item small">
+                  <i class="fa fa-calendar-alt text-primary me-2"></i>{{ .Date.Format "January 2, 2006" }}
+                </li>
               </ol>
             </div>
             <div class="position-relative mt-auto">
               <img class="img-fluid" src="{{ .Params.thumbnail }}" alt="{{ .Title }}">
               <div class="courses-overlay">
-                <a class="btn btn-outline-primary border-2" href="{{ .Permalink }}">Read More <i class="fas fa-arrow-right"></i></a>
+                <span class="btn btn-outline-primary border-2">Read More <i class="fas fa-arrow-right"></i></span>
               </div>
             </div>
           </div>
-        </div>
-        {{ end }}
+        </a>
       </div>
-      <!-- Read More Button -->
-      <div class="row justify-content-center mt-4">
-        <div class="col-auto">
-          <a class="btn btn-primary" href="/news">Read More News <i class="fas fa-arrow-right"></i></a>
-        </div>
+      {{ end }}
+    </div>
+    <!-- Read More Button -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-auto">
+        <a class="btn btn-primary" href="/news">Read More News <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
-  
+</div>
