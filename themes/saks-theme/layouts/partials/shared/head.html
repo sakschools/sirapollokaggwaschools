@@ -8,7 +8,7 @@
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:description" content="{{ .Summary | default .Site.Params.defaultDescription }}">
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+<meta property="og:image" content="{{ .Site.BaseURL | trim "/" }}/{{ .Params.thumbnail | trim "/" }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="article">
 
