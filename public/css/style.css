@@ -650,21 +650,7 @@
     display: flex;
     margin-top: auto;
   }
-  .courses-item a {
-    color: inherit; /* Keep default text color */
-    text-decoration: none; /* Remove underline */
-  }
-  
-  .courses-item a h5,
-  .courses-item a p {
-    color: inherit;
-  }
-  
-  .courses-item a:hover h5,
-  .courses-item a:hover p {
-    color: inherit;
-  }
-  
+
 /** Vertical tabs **/
 .tabs {
     display: flex;
