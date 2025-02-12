@@ -5,6 +5,19 @@
 <meta content="" name="keywords">
 <meta content="{{ .Site.Params.defaultDescription }}" name="description">
 
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Summary | default .Site.Params.defaultDescription }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="article">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ .Summary | default .Site.Params.defaultDescription }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
