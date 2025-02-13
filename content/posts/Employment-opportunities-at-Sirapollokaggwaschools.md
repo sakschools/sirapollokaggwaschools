@@ -4,7 +4,6 @@ date: 2024-11-21T06:57:00+03:00
 thumbnail: "/img/posts/employment-opportunities-at-sirapollokaggwaschools.webp"
 ---
 
-### Employment Opportunity at Sir Apollo Kaggwa Schools  
 
 **Sir Apollo Kaggwa Schools**, established in 1996, is seeking qualified and enthusiastic professionals to join their dynamic team. This is your opportunity to become part of a reputable institution committed to delivering quality education.
 

@@ -4,8 +4,6 @@ date: 2024-10-26T15:21:55+03:00
 thumbnail: "/img/posts/registration-for-new-pupils-2025-intake.webp"
 ---
 
-**Registration of New Pupils for the 2025 Intake is Now Open!**
-
 Sir Apollo Kaggwa Schools - Kira is thrilled to announce the opening of our admissions for the 2025 intake! We invite all interested parents and guardians to register their young learners in our prestigious institution, dedicated to delivering exceptional education and holistic development. Our admissions team is available daily from **8:00 AM to 4:00 PM** to assist with all enrollment procedures.
 
 > **Secure your child's spot in Uganda's leading education service provider today!**

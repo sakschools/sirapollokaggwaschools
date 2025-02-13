@@ -1,10 +1,8 @@
 ---
-title: "Registration 2025"
+title: "Registration of New Pupils for 2025 Intake is in Progress"
 date: 2024-10-06T16:24:16+03:00
 thumbnail: "/img/posts/registration-2025.webp"
 ---
-
-## Registration of New Pupils for 2025 Intake is in Progress!
 
 ### Mark the Dates:
 - **26th Oct 2024**

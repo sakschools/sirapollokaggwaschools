@@ -650,7 +650,34 @@
     display: flex;
     margin-top: auto;
   }
+  .courses-item h5{
+    color: #0C2B4B !important; /* Force dark color */
+  }
+  .courses-item p,
+  .courses-item ol,
+  .courses-item ol li {
+    color: #757575 !important;
+  }
+  .courses-item a {
+    text-decoration: none;
+  }
+  
+  .courses-item a h5 {
+    color: inherit !important;
+  }
+  .courses-item a p,
+  .courses-item a ol,
+  .courses-item a ol li{
+    color: #757575 !important;
+  }
 
+  .courses-item a:hover h5,
+  .courses-item a:hover p,
+  .courses-item a:hover ol,
+  .courses-item a:hover ol li {
+    color: inherit !important; /* Prevent hover effect from changing color */
+  }
+  
 /** Vertical tabs **/
 .tabs {
     display: flex;

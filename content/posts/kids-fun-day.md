@@ -3,9 +3,10 @@ title: "Kids Fun Day"
 date: 2024-10-18T22:55:53+03:00
 thumbnail: "/img/posts/kids-fun-day.webp"
 ---
-### Kids Fun Day on 16th November 2024!
 
 Sir Apollo Kaggwa Primary School - Kira presents a **Kids Fun Day**! 
+
+Bring your kids for a day full of fun, games, and exploration!
 
 #### Activities Include:
 - **Edutainment**
@@ -14,8 +15,6 @@ Sir Apollo Kaggwa Primary School - Kira presents a **Kids Fun Day**!
 - **Kids Games**
 - **Virtual Exploration**
 - **Crafts Extravaganza**
-
-Bring your kids for a day full of fun, games, and exploration!
 
 **Venue**: Sir Apollo Kaggwa Primary School - Kira  
 **Date**: 16th November 2024  
