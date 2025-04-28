@@ -6,8 +6,8 @@ backend:
   name: github
   repo: username/repo
   branch: main # Branch to update (optional; defaults to master)
-  site_domain: https://example.com
-  base_url: https://example.com
+  site_domain: https://www.sirapollokaggwaschools.co.ug
+  base_url: https://www.sirapollokaggwaschools.co.ug
   auth_endpoint: /api/auth
 media_folder: "static/img"  
 public_folder: "/img"       
