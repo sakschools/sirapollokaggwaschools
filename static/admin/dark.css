@@ -581,7 +581,7 @@
     background-color: var(--body-bg-color);
   }
   #preview-pane {
-    background-color: var(--body-bg-color);
+    /* background-color: var(--body-bg-color); */
     border-radius: 0;
   }
   .Resizer.vertical {
