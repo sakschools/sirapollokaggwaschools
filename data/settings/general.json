@@ -1,0 +1,14 @@
+{
+  "baseURL": "www.sirapollokaggwaschools.co.ug",
+  "languageCode": "en-us",
+  "title": "Sir Apollo Kaggwa Schools",
+  "theme": "saks-theme",
+  "logo": "/img/logo.jpg",
+  "email": "info@sirapollokaggwaschools.co.ug",
+  "address": "Kampala, Uganda",
+  "mainSchool": true,
+  "defaultDescription": "Sir Apollo Kaggwa Schools are private primary schools registered with the ministry of education and sports with a UNEB centre number offering Education to Ugandan and non-Ugandan children based on the Ugandan Curriculum and equipping them with necessary life skills.",
+  "school": {
+    "motto": "We Ignite Academic Excellence"
+  }
+}

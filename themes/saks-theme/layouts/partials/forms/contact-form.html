@@ -8,7 +8,7 @@
             <span class="fab fa-whatsapp" style="color: #4AC959; font-size: 40px;"></span>
             </div>
             <div class="text">
-            <p><span>Whatsapp:</span> +256 782626142</p>
+            <p><span>Whatsapp:</span> {{ .Site.Data.settings.social_links.tel}}</p>
             </div>
             </div>
             </div>
@@ -18,7 +18,7 @@
             <span class="fa fa-phone" style="color: #4a81c9; font-size: 40px;"></span>
             </div>
             <div class="text">
-            <p><span>Phone: {{ .Site.Params.social.tel}}</span></p>
+            <p><span>Phone: {{ .Site.Data.settings.social_links.tel}}</span></p>
             </div>
             </div>
             </div>
@@ -28,7 +28,7 @@
             <span class="fa fa-paper-plane" style="color: #c94a4a; font-size: 40px;"></span>
             </div>
             <div class="text">
-            <p><span>{{ .Site.Params.social.email}}</span></p>
+            <p><span>{{ .Site.Data.settings.general.email}}</span></p>
             </div>
             </div>
             </div>
@@ -38,7 +38,7 @@
             <span class="fa fa-globe" style="color: #270404; font-size: 40px;"></span>
             </div>
             <div class="text">
-            <p><span>www.sirapollokaggwaschools.co.ug</span></p>
+            <p><span>{{ .Site.Data.settings.general.baseURL}}</span></p>
             </div>
             </div>
             </div>

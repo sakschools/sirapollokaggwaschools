@@ -2,14 +2,41 @@
 <div class="container-fluid page-header py-6 my-3 mt-0 wow fadeIn" data-wow-delay="0.1s">
     <div class="container text-center">
         <h1 class="display-4 text-white animated slideInDown mb-4">{{ .Title }}</h1>
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="{{ .Site.Params.social.whatsapp }}" class="text-decoration-none me-3"><i class="fab fa-whatsapp" style="color: #25D366; font-size: 36px;"></i></a>
-            <a href="{{ .Site.Params.social.facebook }}" class="text-decoration-none me-3"><i class="fab fa-facebook-f" style="color: #3b5998; font-size: 36px;"></i></a>
-            <a href="{{ .Site.Params.social.twitter }}" class="text-decoration-none me-3"><i class="fab fa-twitter" style="color: #1da1f2; font-size: 36px;"></i></a>
-            <a href="{{ .Site.Params.social.youtube }}" class="text-decoration-none me-3"><i class="fab fa-youtube" style="color: #ff0000; font-size: 36px;"></i></a>
-        </div>
         
+        <!-- Dynamic Social Media Icons -->
+        {{ with site.Data.settings.social_links }}
+        <div class="social-icons">
+            {{ if .whatsapp }}
+            <a href="{{ .whatsapp }}" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp" style="color: #25D366; font-size: 36px;"></i>
+            </a>
+            {{ end }}
+            
+            {{ if .facebook }}
+            <a href="{{ .facebook }}" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f" style="color: #3b5998; font-size: 36px;"></i>
+            </a>
+            {{ end }}
+            
+            {{ if .twitter }}
+            <a href="{{ .twitter }}" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff; font-size: 36px;"></i>
+            </a>
+            {{ end }}
+            
+            {{ if .youtube }}
+            <a href="{{ .youtube }}" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube" style="color: #ff0000; font-size: 36px;"></i>
+            </a>
+            {{ end }}
+            
+            {{ if .instagram }}
+            <a href="{{ .instagram }}" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram" style="color: #E1306C; font-size: 36px;"></i>
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
     </div>
 </div>
 <!-- Page Header End -->

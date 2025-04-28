@@ -1,0 +1,214 @@
+# local_backend: true
+# backend:
+#   name: test-repo  
+#   branch: main
+backend:
+  name: github
+  repo: username/repo
+  branch: main # Branch to update (optional; defaults to master)
+  site_domain: https://www.sirapollokaggwaschools.co.ug
+  base_url: https://www.sirapollokaggwaschools.co.ug
+  auth_endpoint: /api/auth
+media_folder: "static/img"  
+public_folder: "/img"       
+
+collections:
+  - name: 'blog'
+    label: 'Blog Posts'
+    folder: 'content/posts'  
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DDTHH:mm:ssZ' }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image',
+          choose_url: false,  
+          media_library: {
+            config: {
+              folder: 'posts'  
+            }
+          }
+        }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+
+  - name: "settings"
+    label: "Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "data/settings/general.json"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Base URL", name: "baseURL", widget: "string" }
+          - { label: "Logo Path", name: "logo", widget: "image" }
+          - { label: "Main Email", name: "email", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Default Description", name: "defaultDescription", widget: "text" }
+          - { label: "Is Main School?", name: "mainSchool", widget: "boolean" }
+          - name: "school"
+            label: "School Information"
+            widget: "object"
+            fields:
+              - { label: "School Motto", name: "motto", widget: "string" }
+
+  - name: "carousel"
+    label: "Main Carousel"
+    files:  # 👈 Changed from direct fields to files array
+      - name: "main"
+        label: "Carousel Content"
+        file: "data/settings/carousel-main.json"
+        fields:
+          - name: "anniversary_image"
+            label: "Anniversary Image"
+            widget: "object"
+            fields:
+              - { label: "Image Path", name: "path", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+          
+          - name: "slides"
+            label: "Carousel Slides"
+            widget: "list"
+            summary: "{{fields.content.topic}}"
+            fields:
+              - { label: "Slide Image", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - name: "content"
+                label: "Slide Content"
+                widget: "object"
+                fields:
+                  - { label: "Author", name: "author", widget: "string", required: false }
+                  - { label: "Topic", name: "topic", widget: "string", required: false }
+                  - { label: "Description", name: "description", widget: "text", required: false }
+
+  - name: "gallery"
+    label: "Home Image Gallery"
+    files:
+      - name: "main"
+        label: "Gallery Images (Home Page)"
+        file: "data/settings/gallery.json"
+        fields:
+          - name: "images"
+            label: "Gallery Images"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                media_library:
+                  config:
+                    folder: "gallery"  # 👈 Ensures uploads go to /static/img/gallery/
+                    allow_multiple: false
+              - { label: "Caption", name: "caption", widget: "string" }
+  - name: "headteacher"
+    label: "Head Teacher"
+    files:
+      - name: "profile"
+        label: "Head Teacher Profile"
+        file: "data/settings/headteacher.json"
+        fields:
+          - label: "Profile Photo"
+            name: "image"
+            widget: "image"
+            media_library:
+              config:
+                # No folder specified = stores directly in /static/img/
+                allow_multiple: false
+            hint: "Upload to: /static/img/"
+
+          - label: "Short Message (Homepage)"
+            name: "message"
+            widget: "text"
+            
+          - label: "Full Message (Dedicated Page)"
+            name: "full_message"
+            widget: "markdown"
+  - name: "school"
+    label: "School Information"
+    files:
+      - name: "info"
+        label: "School Details"
+        file: "data/settings/school.json"
+        fields:
+          - { label: "School Name", name: "name", widget: "string" }
+          - { label: "School Motto", name: "motto", widget: "string" }
+          
+          - label: "Mission Statement"
+            name: "mission" 
+            widget: "text"
+            hint: "Appears in about section and promotional materials"
+            
+          - label: "Vision Statement"
+            name: "vision"
+            widget: "text"
+            hint: "Shown in school profile sections"
+            
+          - label: "Short Description (Summary 1)"
+            name: "summary1"
+            widget: "text"
+            
+          - label: "Extended Description (Summary 2)" 
+            name: "summary2"
+            widget: "text"
+  - name: "social"
+    label: "Social Media Links"
+    files:
+      - name: "links"
+        label: "Social Media Links"
+        file: "data/settings/social_links.json"
+        fields:
+          - { label: "Telephone", name: "tel", widget: "string" }
+          - { label: "WhatsApp Link", name: "whatsapp", widget: "string" }
+          - { label: "Facebook Link", name: "facebook", widget: "string" }
+          - { label: "Twitter Link", name: "twitter", widget: "string" }
+          - { label: "YouTube Link", name: "youtube", widget: "string" }
+          - { label: "Instagram Link", name: "instagram", widget: "string" }  
+      - name: "social-pages"
+        label: "Tiktok and Youtube Links(Homepage)"
+        file: "data/settings/social.json"
+        fields:
+          - { label: "Tiktok Page", name: "tiktok", widget: "string" }
+          - { label: "Youtube Video ID 1", name: "youtube1", widget: "string" }
+          - { label: "Youtube Video ID 2", name: "youtube2", widget: "string" }
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - name: "main"
+        label: "Testimonials"
+        file: "data/settings/testimonials.json"
+        fields:
+          - name: "testimonials"
+            label: "Testimonials List"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.role}})"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Quote", name: "quote", widget: "text" }
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                media_library:
+                  config:
+                    allow_multiple: false
+                hint: "Upload testimonial photos to /static/img/"
+  - name: "about-home"
+    label: "About Images(Home-Widget)"
+    files:
+      - name: "slideshow"
+        label: "About Page Slideshow"
+        file: "data/settings/about.json"
+        fields:
+          - name: "images"
+            label: "Slideshow Images"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - label: "Image"
+                name: "image"
+                widget: "image"
+                media_library:
+                  config:
+                    allow_multiple: false
+                hint: "Upload about page slideshow images to /static/img/"
+                required: false

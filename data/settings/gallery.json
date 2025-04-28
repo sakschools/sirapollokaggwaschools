@@ -1,0 +1,28 @@
+{
+    "images": [
+      {
+        "image": "/img/gallery/gallery1.webp",
+        "caption": "Students having lessons in classroom"
+      },
+      {
+        "image": "/img/gallery/gallery2.webp",
+        "caption": "Teacher helping Students"
+      },
+      {
+        "image": "/img/gallery/gallery3.webp",
+        "caption": "Pupils playing with toys"
+      },
+      {
+        "image": "/img/gallery/gallery4.webp",
+        "caption": "The Swimming Gala competitions"
+      },
+      {
+        "image": "/img/gallery/gallery5.webp",
+        "caption": "Pupils practicing musical instruments"
+      },
+      {
+        "image": "/img/gallery/gallery6.webp",
+        "caption": "FUBA Basketball league"
+      }
+    ]
+  }

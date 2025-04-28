@@ -2,47 +2,66 @@
 <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
         <div class="row g-5">
+            {{ $social := index site.Data.settings "social_links" }}
+            {{ $general := index site.Data.settings "general" }}
+            
+            <!-- Contact Column -->
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-white mb-4">Get In Touch</h4>
-               
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kampala, Uganda</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{ .Site.Params.social.tel}}</p>
-                <p class="mb-2">info@sirapollokaggwaschools.co.ug</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{ $general.address }}</p>
+                {{ with $social.tel }}
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{ . }}</p>
+                {{ end }}
+                <p class="mb-2"><i class="fa-sharp fa-solid fa-envelope"></i></i>{{ $general.email }}</p>
             </div>
+ 
+            <!-- Quick Links Column -->
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Quick Links</h4>
                 <a class="btn btn-link" href="/about">About Us</a>
                 <a class="btn btn-link" href="/admission">Admissions</a>
                 <a class="btn btn-link" href="/contact">Contact Us</a>
-                <a class="btn btn-link" href="/news">NEWS</a>
-                
+                <a class="btn btn-link" href="/news">News</a>
             </div>
+
+            <!-- Popular Links Column -->
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Popular Links</h4>
                 <a class="btn btn-link" href="/admission">Admissions</a>
                 <a class="btn btn-link" href="/contact">Contact Us</a>
-                <a class="btn btn-link" href="">History</a>
-                <a class="btn btn-link" href="">Student Life</a>
-                <a class="btn btn-link" href="/news">News</a>
+                <a class="btn btn-link" href="#">History</a>
+                <a class="btn btn-link" href="#">Student Life</a>
             </div>
+
+            <!-- Social Media Column -->
             <div class="col-lg-3 col-md-6">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
+                <div class="card bg-transparent border-light" style="width: 18rem;">
+                    <div class="card-body text-light">
                       <h5 class="card-title">
-                        <i class="fa fa-chart-bar" aria-hidden="true"></i> Website Visitors
+                        <i class="fa fa-chart-bar me-2"></i>Website Visitors
                       </h5>
-                      <script type="text/javascript" src="https://freehitcounters.org/count/fem0"></script><br>
- <a href='https://www.versicherungen.at/'>Versicherungen</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=fd4c9eaf5d58b1b127d1200a861584631e46b195'></script>
-                      <!-- <p class="card-text" id="visits"> </p>-->
+                      <script type="text/javascript" src="https://freehitcounters.org/count/hqyf"></script><br>
+                    <a href='https://www.versicherungen.at/cyber-versicherung/'>Hacker-Angriff Versicherung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=b8714cf3b715fc7729ae9369f18ff056e91810ce'></script>
                     </div>
-                  </div>
-                  
+                </div>
+                
                 <h6 class="text-white mt-4 mb-3">Follow Us</h6>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-square btn-outline-light me-0" href="{{ .Site.Params.social.whatsapp}}"><i class="fab fa-whatsapp"></i></a>
-                    <a class="btn btn-square btn-outline-light me-1" href="{{ .Site.Params.social.twitter}}"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-square btn-outline-light me-1" href="{{ .Site.Params.social.facebook}}"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-outline-light me-1" href="{{ .Site.Params.social.youtube}}"><i class="fab fa-youtube"></i></a>
+                    {{ with $social.whatsapp }}
+                    <a class="btn btn-square btn-outline-light me-1" href="{{ . }}" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    {{ end }}
+                    {{ with $social.twitter }}
+                    <a class="btn btn-square btn-outline-light me-1" href="{{ . }}" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    {{ end }}
+                    {{ with $social.facebook }}
+                    <a class="btn btn-square btn-outline-light me-1" href="{{ . }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    {{ end }}
+                    {{ with $social.youtube }}
+                    <a class="btn btn-square btn-outline-light me-1" href="{{ . }}" target="_blank"><i class="fab fa-youtube"></i></a>
+                    {{ end }}
+                    <!-- {{ with $social.instagram }}
+                    <a class="btn btn-square btn-outline-light me-1" href="{{ . }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    {{ end }} -->
                 </div>
             </div>
         </div>
@@ -50,16 +69,15 @@
 </div>
 <!-- Footer End -->
 
-
 <!-- Copyright Start -->
 <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a href="#">Sir Apollo Kaggwa Schools</a>, All Right Reserved.
+                &copy; <a href="{{ $general.baseURL }}">{{ $general.title }}</a>, All Right Reserved.
             </div>
             <div class="col-md-6 text-center text-md-end">
-                Designed By <a href="https://chronostechsolns.com">Chronos Tech Solutions</a>
+                Designed By <a href="https://chronostechsolns.com"> Chronos Tech Solutions</a>
             </div>
         </div>
     </div>

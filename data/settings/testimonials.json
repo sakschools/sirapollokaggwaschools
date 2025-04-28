@@ -1,0 +1,22 @@
+{
+    "testimonials": [
+      {
+        "name": "LYNN KUNIHIRA AKKY",
+        "role": "Parent",
+        "quote": "All my children have gone through City Parents' School and I don't regret it at all. They brought the best out of them. My first born got 4 aggregates and is now at Kings College Budo. Thumbs up to the staff, pupils and parents of City Parents' School.",
+        "image": "/img/testimonial-2.png"
+      },
+      {
+        "name": "KWAGZY BREEZY",
+        "role": "Teacher",
+        "quote": "City Parents' School molds what a parent wants their child to be. Their motto is to enable the future - they mold future leaders. Most of the head-prefects in top secondary schools are former City Parents' students. I encourage pupils to discover their talents here.",
+        "image": "/img/testimonial-1.png"
+      },
+      {
+        "name": "CHARITY BYARUBAGA",
+        "role": "Parent",
+        "quote": "City Parents' School has set a great academic pace in Central Region. It has not compromised our expectations. Big ups to the administration team and teaching staff!",
+        "image": "/img/testimonial-3.png"
+      }
+    ]
+  }

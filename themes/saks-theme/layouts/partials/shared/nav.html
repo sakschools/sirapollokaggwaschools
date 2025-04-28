@@ -1,16 +1,12 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
     <a href="{{ "/" | relURL }}" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-        {{ if .Site.Params.mainSchool }}
-        <img src="/img/logo.jpg" alt="{{ .Site.Title }} Logo">
-        {{ else }}
-        <img src="/img/logo.png" alt="{{ .Site.Title }} Logo">
-        {{ end }}
+        <img src="{{ site.Data.settings.general.logo }}" alt="{{ site.Data.settings.general.title }} Logo">
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="collapse navbar-collapse" id="navbarCollapse"> 
         <div class="navbar-nav ms-auto p-4 p-lg-0">
             <a href="{{ "/" | relURL }}" class="nav-item nav-link active">Home</a>
             <div class="nav-item dropdown">

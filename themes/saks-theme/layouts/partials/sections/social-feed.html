@@ -1,63 +1,77 @@
 <div class="container p-3 mt-5 border border-danger border-2">
+    {{ $social := index site.Data.settings "social" }}
+    {{ $social2 := index site.Data.settings "social_links" }}
+    {{ $general := index site.Data.settings "general" }}
     <div class="row" style="display: flex;">
-        <!-- Column for TikTok feed -->
+        <!-- TikTok Feed -->
+        {{ with $social.tiktok }}
         <div class="col-md-6" id="tiktok-container" style="display: flex; flex-direction: column;">
             <h2 class="mb-4">Our TikTok Feed</h2>
-            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sirapollokaggwaschools" data-unique-id="sirapollokaggwaschools" data-embed-type="creator" style="flex-grow: 1;">
+            <blockquote class="tiktok-embed" cite="{{ . }}" 
+                      data-unique-id="{{ replace . `https://www.tiktok.com/@` `` }}" 
+                      data-embed-type="creator" 
+                      style="flex-grow: 1;">
                 <section>
-                    <a target="_blank" href="https://www.tiktok.com/@sirapollokaggwaschools?refer=creator_embed">@sirapollokaggwaschools</a>
+                    <a target="_blank" href="{{ . }}">@{{ replace . `https://www.tiktok.com/@` `` }}</a>
                 </section>
             </blockquote>
         </div>
-        <!-- Column for Twitter feed -->
-        <div class="col-md-6" id="twitter-container" style="display: flex; flex-direction: column;">
-            <h2 class="mb-4">Our Facebook Feed</h2>
-            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100084724500868" data-tabs="timeline, events, messages" data-width="780" data-height="480" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100084724500868" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100084724500868">Sir Apollo Kaggwa Schools</a></blockquote></div>
-        </div>
-    </div>
-    
-    <!-- Container for the embedded Facebook video -->
-<div class="container" id="facebook-container">
-    <div class="row">
-        {{ if .Site.Params.mainSchool}}
-        <!-- First column with video 1 -->
-        <h2 class="mb-4 text-center">Our Youtube Feed</h2>
-        <div class="col-md-6">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dRhYX0ZsoWM?si=_8GZ36r82v1dhI-K" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-            </div>
-        </div>
-        {{ else }}
-        <!-- First column with Facebook video -->
-        <div class="col-md-6">
-            <h2 class="mb-4">Our Facebook Feed</h2>
-            <div class="video-container">
-                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100031656163894%2Fvideos%2F911916250110856%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy"></iframe>
+        {{ end }}
+        
+        <!-- Facebook Feed -->
+        {{ with $social2.facebook }}
+        <div class="col-md-6" id="facebook-container" style="display: flex; flex-direction: column;">
+            <h2 class="mb-4">Our Facebook Page</h2>
+            <div class="fb-page" 
+                 data-href="{{ . }}" 
+                 data-tabs="timeline" 
+                 data-width="780" 
+                 data-height="480" 
+                 data-small-header="false" 
+                 data-adapt-container-width="true" 
+                 data-hide-cover="false" 
+                 data-show-facepile="true">
+                <blockquote cite="{{ . }}" class="fb-xfbml-parse-ignore">
+                    <a href="{{ . }}">{{ $general.title }}</a>
+                </blockquote>
             </div>
         </div>
         {{ end }}
-        <!-- Second column with video 2 (unchanged) -->
-        <div class="col-md-6">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/So01aRemn50?si=PVVSFJIkL3siszLO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <!-- YouTube Videos Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <h2 class="mb-4 text-center">Our YouTube Videos</h2>
+            {{ with $social.youtube1 }}
+            <div class="col-md-6">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/{{ . }}" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                            loading="lazy"></iframe>
+                </div>
             </div>
+            {{ end }}
+            {{ with $social.youtube2 }}
+            <div class="col-md-6">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/{{ . }}" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen 
+                            loading="lazy"></iframe>
+                </div>
+            </div>
+            {{ end }}
         </div>
     </div>
 </div>
-</div>
 
-
-
-
-<!-- script loading logic to load TikTok and Twitter scripts only when necessary -->
 <script>
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 if (entry.target.id === 'tiktok-container' && !document.getElementById('tiktok-script')) {
@@ -65,18 +79,22 @@
                     script.id = 'tiktok-script';
                     script.src = 'https://www.tiktok.com/embed.js';
                     document.body.appendChild(script);
-                } else if (entry.target.id === 'twitter-container' && !document.getElementById('twitter-script')) {
+                }
+                if (entry.target.id === 'facebook-container' && !document.getElementById('facebook-script')) {
                     const script = document.createElement('script');
-                    script.id = 'twitter-script';
-                    script.src = 'https://platform.twitter.com/widgets.js';
-                    script.charset = 'utf-8';
+                    script.id = 'facebook-script';
+                    script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0';
+                    script.crossOrigin = 'anonymous';
                     document.body.appendChild(script);
                 }
                 observer.unobserve(entry.target);
             }
         });
-    }, options);
+    }, { threshold: 0.1 });
 
-    observer.observe(document.getElementById('tiktok-container'));
-    observer.observe(document.getElementById('twitter-container'));
+    const tiktokEl = document.getElementById('tiktok-container');
+    const fbEl = document.getElementById('facebook-container');
+    if (tiktokEl) observer.observe(tiktokEl);
+    if (fbEl) observer.observe(fbEl);
+});
 </script>

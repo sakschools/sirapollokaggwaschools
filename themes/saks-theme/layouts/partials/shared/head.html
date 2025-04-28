@@ -1,22 +1,23 @@
 <!-- layouts/partials/head.html -->
+{{ $general := index site.Data.settings "general" }}
 <meta charset="utf-8">
-<title>{{ .Site.Title }}</title>
+<title>{{ $general.title }}</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
-<meta content="{{ .Site.Params.defaultDescription }}" name="description">
+<meta content="{{ $general.defaultDescription }}" name="description">
 
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ .Summary | default .Site.Params.defaultDescription }}">
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+<meta property="og:description" content="{{ .Summary | default $general.defaultDescription }}">
+<meta property="og:image" content="{{ $general.baseURL }}{{ .Params.thumbnail }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="article">
 
 <!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ .Title }}">
-<meta name="twitter:description" content="{{ .Summary | default .Site.Params.defaultDescription }}">
-<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
+<meta name="twitter:description" content="{{ .Summary | default $general.defaultDescription }}">
+<meta name="twitter:image" content="{{ $general.baseURL }}{{ .Params.thumbnail }}">
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -29,9 +30,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"> 
 
-<!-- Icon Font Stylesheet -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+<!-- Latest Font Awesome Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
 <link href="/lib/animate/animate.min.css" rel="stylesheet">

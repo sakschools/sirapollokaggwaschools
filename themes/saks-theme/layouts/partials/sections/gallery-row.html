@@ -1,72 +1,18 @@
 <div class="container py-5 border border-danger border-2">
     <h3 class="text-uppercase text-center pb-4">Our Photo Gallery</h3>
     <div class="row">
-        <!-- First Image -->
+        {{ $gallery := index site.Data.settings "gallery" }}
+        {{ range $index, $item := $gallery.images }}
         <div class="col-lg-4 col-md-6 mb-4">
             <div class="card border-info">
-                <a href="/img/gallery/gallery1.webp" data-fancybox="gallery">
-                    <img src="/img/gallery/gallery1.webp" class="card-img-top rounded" alt="gallery1.webp">
+                <a href="{{ $item.image }}" data-fancybox="gallery">
+                    <img src="{{ $item.image }}" class="card-img-top rounded" alt="{{ $item.caption }}">
                 </a>
                 <div class="card-body">
-                    <p class="card-text text-center text-danger fw-bold">Students having lessons in classroom</p>
+                    <p class="card-text text-center text-danger fw-bold">{{ $item.caption }}</p>
                 </div>
             </div>
         </div>
-        <!-- Second Image -->
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-info">
-                <a href="/img/gallery/gallery2.webp" data-fancybox="gallery">
-                    <img src="/img/gallery/gallery2.webp" class="card-img-top rounded" alt="gallery2.webp">
-                </a>
-                <div class="card-body">
-                    <p class="card-text text-center text-danger fw-bold">Teacher helping Students</p>
-                </div>
-            </div>
-        </div>
-        <!-- Third Image -->
-<div class="col-lg-4 col-md-6 mb-4">
-    <div class="card border-info">
-        <a href="/img/gallery/gallery3.webp" data-fancybox="gallery">
-            <img src="/img/gallery/gallery3.webp" class="card-img-top rounded" alt="gallery3.webp">
-        </a>
-        <div class="card-body">
-            <p class="card-text text-center text-danger fw-bold">Pupils playing with toys</p>
-        </div>
+        {{ end }}
     </div>
-</div>
-<!-- Fourth Image -->
-<div class="col-lg-4 col-md-6 mb-4">
-    <div class="card border-info">
-        <a href="/img/gallery/gallery4.webp" data-fancybox="gallery">
-            <img src="/img/gallery/gallery4.webp" class="card-img-top rounded" alt="gallery4.webp">
-        </a>
-        <div class="card-body">
-            <p class="card-text text-center text-danger fw-bold">The Swimming Gala competitions</p>
-        </div>
-    </div>
-</div>
-<!-- Fifth Image -->
-<div class="col-lg-4 col-md-6 mb-4">
-    <div class="card border-info">
-        <a href="/img/gallery/gallery5.webp" data-fancybox="gallery">
-            <img src="/img/gallery/gallery5.webp" class="card-img-top rounded" alt="gallery5.webp">
-        </a>
-        <div class="card-body">
-            <p class="card-text text-center text-danger fw-bold">Pupils practicing musical instruments</p>
-        </div>
-    </div>
-</div>
-<!-- Sixth Image -->
-<div class="col-lg-4 col-md-6 mb-4">
-    <div class="card border-info">
-        <a href="/img/gallery/gallery6.webp" data-fancybox="gallery">
-            <img src="/img/gallery/gallery6.webp" class="card-img-top rounded" alt="gallery6.webp">
-        </a>
-        <div class="card-body">
-            <p class="card-text text-center text-danger fw-bold">FUBA Basketball league</p>
-        </div>
-    </div>
-</div>
-
-    </div>
-</div>
+</div> 
