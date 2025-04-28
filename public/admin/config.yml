@@ -4,8 +4,8 @@
 #   branch: main
 backend:
   name: github
-  repo: username/repo
-  branch: main # Branch to update (optional; defaults to master)
+  repo: sakschools/sirapollokaggwaschools
+  branch: main 
   site_domain: https://www.sirapollokaggwaschools.co.ug
   base_url: https://www.sirapollokaggwaschools.co.ug
   auth_endpoint: /api/auth
