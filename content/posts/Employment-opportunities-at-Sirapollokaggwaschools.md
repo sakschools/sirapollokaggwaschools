@@ -1,7 +1,7 @@
 ---
-title: "Employment Opportunities at Sir Apollo Kaggwa Schools"
+title: Opportunities at Sir Apollo Kaggwa Schools
 date: 2024-11-21T06:57:00+03:00
-thumbnail: "/img/posts/employment-opportunities-at-sirapollokaggwaschools.webp"
+thumbnail: /img/posts/employment-opportunities-at-sirapollokaggwaschools.webp
 ---
 
 
