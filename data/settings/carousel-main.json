@@ -1,59 +1,59 @@
 {
-    "anniversary_image": {
-      "path": "/img/anniversary.jpeg",
-      "alt": "School Anniversary Celebration"
-    },
-    "slides": [
-      {
-        "image": "/img/carousel1.webp",
-        "alt": "Academic Excellence at Our School",
-        "content": {
-          "author": "",
-          "topic": "",
-          "description": ""
-        }
-      },
-      {
-        "image": "/img/carousel2.webp",
-        "alt": "Student Achievements",
-        "content": {
-          "author": "We install self",
-          "topic": "Confidence & public speech",
-          "description": "Our pupil Ahirire Faith crowned little miss tourism 2023-2024"
-        }
-      },
-      {
-        "image": "/img/carousel3.webp",
-        "alt": "Leadership Program",
-        "content": {
-          "topic": "Pupils' Leadership Enhancement",
-          "description": "Our students paid a courtesy visit to the Speaker of Parliament"
-        }
-      },
-      {
-        "image": "/img/carousel4.webp",
-        "alt": "Sports Activities",
-        "content": {
-          "author": "Developing",
-          "topic": "Talents",
-          "description": "Participation in national basketball tournament"
-        }
-      },
-      {
-        "image": "/img/carousel5.webp",
-        "alt": "Parent Engagement",
-        "content": {
-          "topic": "Prominent Parents",
-          "description": "Parents enjoy moments with ballet club pupils"
-        }
-      },
-      {
-        "image": "/img/carousel6.webp",
-        "alt": "Swimming Competition",
-        "content": {
-          "topic": "Swimming Gala",
-          "description": "Annual inter-school swimming competition"
-        }
+  "anniversary_image": {
+    "path": "/img/anniversary.jpeg",
+    "alt": "School Anniversary Celebration"
+  },
+  "slides": [
+    {
+      "image": "/img/carousel1.webp",
+      "alt": "Academic Excellence at Our School",
+      "content": {
+        "author": "",
+        "topic": "",
+        "description": ""
       }
-    ]
-  }
+    },
+    {
+      "image": "/img/carousel2.webp",
+      "alt": "Student Achievements",
+      "content": {
+        "author": "We install self",
+        "topic": "Confidence & public speech",
+        "description": "Our pupil Ahirire Faith crowned little miss tourism 2023-2024"
+      }
+    },
+    {
+      "image": "/img/carousel3.webp",
+      "alt": "Leadership Program",
+      "content": {
+        "topic": "Pupils' Leadership Enhancement",
+        "description": "Our students paid a courtesy visit to the Speaker of Parliament"
+      }
+    },
+    {
+      "image": "/img/carousel4.webp",
+      "alt": "Sports Activities",
+      "content": {
+        "author": "Developing",
+        "topic": "Talents",
+        "description": "Participation in national basketball tournament"
+      }
+    },
+    {
+      "image": "/img/carousel5.webp",
+      "alt": "Parent Engagement",
+      "content": {
+        "topic": "Prominent Parents",
+        "description": "Parents enjoy moments with ballet club pupils"
+      }
+    },
+    {
+      "image": "/img/carousel6.webp",
+      "alt": "Swimming Competition",
+      "content": {
+        "topic": "Swimming Gala",
+        "description": "Annual inter-school swimming competition"
+      }
+    }
+  ]
+}
