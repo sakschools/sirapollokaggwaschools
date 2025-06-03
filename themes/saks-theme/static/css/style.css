@@ -650,34 +650,7 @@
     display: flex;
     margin-top: auto;
   }
-  .courses-item h5{
-    color: #0C2B4B !important; /* Force dark color */
-  }
-  .courses-item p,
-  .courses-item ol,
-  .courses-item ol li {
-    color: #757575 !important;
-  }
-  .courses-item a {
-    text-decoration: none;
-  }
-  
-  .courses-item a h5 {
-    color: inherit !important;
-  }
-  .courses-item a p,
-  .courses-item a ol,
-  .courses-item a ol li{
-    color: #757575 !important;
-  }
 
-  .courses-item a:hover h5,
-  .courses-item a:hover p,
-  .courses-item a:hover ol,
-  .courses-item a:hover ol li {
-    color: inherit !important; /* Prevent hover effect from changing color */
-  }
-  
 /** Vertical tabs **/
 .tabs {
     display: flex;
@@ -983,4 +956,11 @@
 .row.gallery-row {
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
+}
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px; /* optional for cleaner look */
 }
