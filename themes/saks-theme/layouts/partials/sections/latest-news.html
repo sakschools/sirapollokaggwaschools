@@ -6,14 +6,14 @@
         <!-- Make the whole card clickable -->
         <a href="{{ .Permalink }}" class="text-decoration-none">
           <div class="courses-item d-flex flex-column bg-light overflow-hidden h-100">
-            <div class="text-center p-4 pt-0">
+            <div class="latest-news text-center p-4 pt-0">
               <div class="d-inline-block bg-danger text-white fs-5 py-1 px-4 mb-4">Trending News</div>
               <!-- Make the title clickable -->
-              <h5 class="mb-3 text-dark">{{ .Title }}</h5>
-              <p class="text-dark">{{ .Summary | truncate 100 }}</p>
+              <h5 class="mb-3 text-primary">{{ .Title }}</h5>
+              <p>{{ .Summary | truncate 150 }}</p>
               <ol class="breadcrumb justify-content-center mb-0">
                 <li class="breadcrumb-item small">
-                  <i class="fa fa-calendar-alt text-secondary me-2"></i>{{ .Date.Format "January 2, 2006" }}
+                  <i class="fa fa-calendar-alt text-primary me-2"></i>{{ .Date.Format "January 2, 2006" }}
                 </li>
               </ol>
             </div>

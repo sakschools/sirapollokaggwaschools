@@ -964,3 +964,13 @@
   margin: 1rem auto;
   border-radius: 8px; /* optional for cleaner look */
 }
+.latest-news h5{
+  color: #0C2B4B !important;
+}
+.latest-news p{
+  color: #0c2b4bdc !important;
+}
+.latest-news li,
+.latest-news i{
+  color: var(--primary) !important;
+}
