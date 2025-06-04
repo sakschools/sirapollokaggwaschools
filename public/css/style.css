@@ -974,3 +974,10 @@
 .latest-news i{
   color: var(--primary) !important;
 }
+.container img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px; /* optional for cleaner look */ 
+} 
