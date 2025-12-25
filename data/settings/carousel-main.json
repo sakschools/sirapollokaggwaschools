@@ -54,6 +54,17 @@
         "topic": "Swimming Gala",
         "description": "Annual inter-school swimming competition"
       }
+    },
+    {
+      "image": "/img/1001218993.png",
+      "content": {
+        "topic": "Festive greetings "
+      },
+      "alt": "Festive greetings "
+    },
+    {
+      "image": "/img/1001218993.png",
+      "alt": "Festive greetings "
     }
   ]
 }
