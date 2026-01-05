@@ -14,13 +14,23 @@ Building upon this foundation, our beloved pupils explored the life and legacy o
 
 The learning adventure continued aboard the traditional Dubai Abra, gliding gracefully across the historic Dubai Creek. As the water lapped gently beneath the boat, our beloved pupils observed the very route that once powered commerce and cultural exchange in the city. This immersive journey seamlessly connected historical knowledge with contemporary development, allowing our beloved pupils to reflect, inquire and draw meaningful insights. In doing so, it reinforced analytical thinking, experiential learning, and a profound appreciation for how history continues to shape the present.
 
+![](/img/monrail.jpg)
+
 A visit to the iconic Dubai Frame provided a truly breathtaking vantage point from which our beloved pupils could behold the city’s rich past alongside its ambitious future. From this remarkable perspective, they observed the timeless charm of old Dubai juxtaposed with the innovation and dynamism of its modern skyline, witnessing firsthand the seamless integration of heritage and progress. The Frame itself became a living classroom in creativity, urban planning and visionary design, vividly demonstrating how imagination, strategy, and foresight can bridge history and aspiration in tangible, inspiring ways.
 
+![](/img/29.jpg)
+
 Later in the day, our beloved pupils experienced a harmonious balance between intellectual engagement and recreation on Dubai’s pristine beaches. Through thoughtfully designed team-building activities and guided exploration of the marine environment, they enhanced cooperation, resilience and social skills while deepening their awareness of ecological conservation. This enriching experience beautifully exemplified the holistic approach to learning, demonstrating how personal growth, environmental stewardship and joyful discovery can seamlessly intertwine with education.
+
+![](/img/beach-fun.jpg)
+
+![](/img/beach-day-1.jpg)
 
 Throughout the day, our pupils demonstrated curiosity, discipline, and a vibrant enthusiasm for discovery, reflecting the core values cultivated through a holistic approach to education. Each carefully designed activity encouraged reflection, inquiry, and analytical thinking, ensuring that learning remained engaging, meaningful, and impactful, and that every experience contributed to the development of well-rounded, thoughtful learners.
 
 Today’s experiences laid a remarkable foundation for the remainder of the Dubai educational tour. The day showcased a seamless integration of academic inquiry, cultural exploration, leadership reflection, environmental awareness, and personal growth, reaffirming our commitment to nurturing globally minded learners. 
+
+![](/img/1001259059.jpg)
 
 The Dubai expedition continues tomorrow, 4th December 2024, providing our pupils with another exciting opportunity to be enriched, inspired and empowered. This journey reflects our commitment to holistic education, fostering intellectual curiosity, personal growth and global awareness as our pupils take confident steps toward becoming visionary, thoughtful, and well-rounded global citizens.
 
