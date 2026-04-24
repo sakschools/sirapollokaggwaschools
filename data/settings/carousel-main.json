@@ -5,15 +5,6 @@
   },
   "slides": [
     {
-      "image": "/img/anniversary.jpeg",
-      "alt": "Academic Excellence",
-      "content": {
-        "author": "",
-        "topic": "",
-        "description": ""
-      }
-    },
-    {
       "image": "/img/carousel2.webp",
       "alt": "Pupil  Achievements",
       "content": {
@@ -54,17 +45,6 @@
         "topic": "Swimming Gala",
         "description": "Annual inter-school swimming competition"
       }
-    },
-    {
-      "image": "/img/1001218993.png",
-      "content": {
-        "topic": "Festive greetings "
-      },
-      "alt": "Festive greetings "
-    },
-    {
-      "image": "https://www.youtube.com/@sirapollokaggwaschools1996",
-      "alt": "Festive greetings "
     }
   ]
 }
