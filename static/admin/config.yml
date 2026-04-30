@@ -14,7 +14,7 @@ collections:
     folder: 'content/posts'  
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: "blog/{{slug}}"  # 👈 Preview URL path
+    preview_path: "blog/{{slug}}"
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DDTHH:mm:ssZ' }
@@ -50,7 +50,7 @@ collections:
 
   - name: "carousel"
     label: "Main Carousel"
-    files:  # 👈 Changed from direct fields to files array
+    files:
       - name: "main"
         label: "Carousel Content"
         file: "data/settings/carousel-main.json"
@@ -94,7 +94,7 @@ collections:
                 widget: "image"
                 media_library:
                   config:
-                    folder: "gallery"  # 👈 Ensures uploads go to /static/img/gallery/
+                    folder: "gallery"
                     allow_multiple: false
               - { label: "Caption", name: "caption", widget: "string" }
   - name: "headteacher"
