@@ -6,6 +6,10 @@
     --dark: #0C2B4B;
 }
 
+body, p {
+    color: #212529; 
+}
+
 .py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -957,13 +961,48 @@
     margin-right: calc(var(--bs-gutter-x) / -2);
     margin-left: calc(var(--bs-gutter-x) / -2);
 }
+/* Targets the container around the main blog post content */
+.post-content {
+    /* Achieves the equally justified text on all sides */
+    text-align: justify;
+    
+    /* Achieves the 'thick text' appearance */
+    font-weight: 600; 
+    
+    /* Improves vertical spacing/readability between lines */
+    line-height: 1.8;
+}
+
+/* Targets paragraphs within the content for cleaner spacing */
+.post-content p {
+    margin-bottom: 2rem; 
+}
+
 .post-content img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 1rem auto;
-  border-radius: 8px; /* optional for cleaner look */
+  border-radius: 8px;
 }
+
+@media screen and (max-width: 767px) {
+    article {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .post-content {
+        font-size: 0.95rem; 
+    }
+
+    .posts-sidebar{
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+
 .latest-news h5{
   color: #0C2B4B !important;
 }
@@ -980,4 +1019,4 @@
   display: block;
   margin: 1rem auto;
   border-radius: 8px; /* optional for cleaner look */ 
-} 
+}
