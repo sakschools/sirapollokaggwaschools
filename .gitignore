@@ -1,0 +1,9 @@
+public/
+resources/
+.hugo_build.tmp/
+.sass-cache/
+assets/jsconfig.json
+.env
+.env.*
+.DS_Store
+Thumbs.db
