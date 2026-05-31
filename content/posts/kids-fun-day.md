@@ -17,5 +17,5 @@ Kids Fun Day will take place at Sir Apollo Kaggwa Primary School - Kira, startin
 
 ![Kids Fun Day Poster](/img/posts/kids-fun-day.webp)
 
-We are also open for interviews for Pre-Primary to Primary 6 from 26th October 2024 to 30th November 2024. For more details, contact us at: +256 782626142. Come with your little ones and let them discover, create, and connect in a celebration of childhood and community spirit.
+We are also open for interviews for Pre-Primary to Primary 6 from 26th October 2024 to 30th November 2024. For more details, contact us at: +256 704-281240. Come with your little ones and let them discover, create, and connect in a celebration of childhood and community spirit.
 🌐 [Sir Apollo Kaggwa Schools](http://sirapollokaggwaschools.co.ug)
