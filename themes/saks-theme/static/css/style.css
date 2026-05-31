@@ -1020,3 +1020,10 @@ body, p {
   margin: 1rem auto;
   border-radius: 8px; /* optional for cleaner look */ 
 }
+/* Enforce uniform image sizing for trending news cards */
+.courses-item .position-relative img.img-fluid {
+    width: 100%;
+    height: 260px; /* Adjust this value up or down to find the perfect look */
+    object-fit: cover;
+    object-position: center; 
+}
