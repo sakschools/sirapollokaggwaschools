@@ -963,14 +963,10 @@ body, p {
 }
 /* Targets the container around the main blog post content */
 .post-content {
-    /* Achieves the equally justified text on all sides */
     text-align: justify;
-    
-    /* Achieves the 'thick text' appearance */
     font-weight: 600; 
-    
-    /* Improves vertical spacing/readability between lines */
-    line-height: 1.8;
+    line-height: 1.6;
+    hyphens: auto; /* Enable hyphenation for better text flow */
 }
 
 /* Targets paragraphs within the content for cleaner spacing */
