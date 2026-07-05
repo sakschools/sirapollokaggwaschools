@@ -28,6 +28,8 @@ Our staff, both teaching and non-teaching, have also been instrumental in mainta
 
 Attention now shifts to the finals, where both the Under-13 Girls and Under-13 Boys teams will compete for national glory, while the Under-11 side prepares for a determined third-place playoff. The decisive matches will take place on Saturday, 11th July 2026, at Elite High School, a venue expected to host an exciting conclusion to the tournament.
 
+![Finals and third place playoffs ](/img/665533.jpg "Finals")
+
 As the school community looks ahead to the final day, pride runs deep across both the academic and Talent Development Programme departments. The performances so far reflect a growing legacy of excellence, discipline, and unity that continues to define Sir Apollo Kaggwa Schools. 
 
 Regardless of the final results, the 2026 campaign has already reinforced a powerful message: true success lies in balancing academic achievement with sporting excellence, a standard that Sir Apollo Kaggwa Schools continues to uphold with distinction.
