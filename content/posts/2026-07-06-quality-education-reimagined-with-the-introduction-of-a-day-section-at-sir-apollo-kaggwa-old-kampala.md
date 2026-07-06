@@ -20,4 +20,4 @@ We also wish to reassure all stakeholders that our academic standards remain con
 
 Beyond classroom learning, we believe the Day Section will further strengthen parental involvement in education. With learners returning home daily, parents will have more opportunities to monitor progress, support learning activities, and actively participate in shaping their children’s academic journey.
 
-As Sir Apollo Kaggwa Boarding Primary School, Old Kampala, we are proud of this development, which reflects our ongoing commitment to inclusivity, accessibility, and educational excellence. We remain dedicated to evolving with the needs of our community while ensuring that every child receives a strong and solid foundation for future success.
+We take immense pride in this remarkable development, which reflects our unwavering commitment to providing inclusive, accessible, and high-quality education. As we continue to grow and respond to the evolving needs of our community, we remain steadfast in our mission to nurture every learner through a strong educational foundation that inspires academic excellence, character development, and lifelong success.
