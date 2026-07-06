@@ -48,7 +48,10 @@
     },
     {
       "image": "/img/670551.jpg",
-      "alt": "Introducing Day Section at Old Kampala"
+      "alt": "Introducing Day Section at Old Kampala",
+      "content": {
+        "description": "Sir Apollo Kaggwa Old Kampala introduces a Day Section for Pre-Primary to P3, bringing quality education closer to families.\n"
+      }
     }
   ]
 }
