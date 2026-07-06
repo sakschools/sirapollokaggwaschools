@@ -5,6 +5,13 @@
   },
   "slides": [
     {
+      "image": "/img/670551.jpg",
+      "alt": "Introducing Day Section at Old Kampala",
+      "content": {
+        "description": "Sir Apollo Kaggwa Old Kampala introduces a Day Section for Pre-Primary to P3, bringing quality education closer to families.\n"
+      }
+    },
+    {
       "image": "/img/carousel2.webp",
       "alt": "Pupil  Achievements",
       "content": {
@@ -44,13 +51,6 @@
       "content": {
         "topic": "Swimming Gala",
         "description": "Annual inter-school swimming competition"
-      }
-    },
-    {
-      "image": "/img/670551.jpg",
-      "alt": "Introducing Day Section at Old Kampala",
-      "content": {
-        "description": "Sir Apollo Kaggwa Old Kampala introduces a Day Section for Pre-Primary to P3, bringing quality education closer to families.\n"
       }
     }
   ]
