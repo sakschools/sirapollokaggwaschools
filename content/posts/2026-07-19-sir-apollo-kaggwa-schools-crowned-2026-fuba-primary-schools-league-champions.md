@@ -7,17 +7,23 @@ We have achieved another remarkable milestone in our sporting journey after bein
 
 The championship victory was a memorable moment for our entire school community and a celebration of the values that guide everything we do. Throughout the competition, our boys displayed exceptional teamwork, discipline, confidence, and resilience, showing great composure during challenging moments and maintaining their focus until the final whistle. Their success is a result of consistent training, commitment from our coaches, and the collective effort of everyone who continues to support our learners in their pursuit of excellence.
 
-
+![](/img/760362.jpg)
 
 Our girls’ team also delivered a remarkable performance throughout the tournament, showcasing outstanding talent, determination, and a strong competitive spirit. Despite narrowly missing out on the championship title after a closely contested 34–24 defeat to Hill Preparatory School in the final, our girls earned a well-deserved silver medal. Their journey was a true demonstration of perseverance, teamwork, and sportsmanship, reflecting the values of hard work and excellence that we continue to instil in all our learners.
 
+![](/img/760368.jpg)
+
 Our U11 team equally made us proud with an impressive display of skill, energy, and teamwork, securing the bronze medal after a convincing 38–20 victory over Hill Preparatory School in the third-place playoff. Their achievement highlights the importance of nurturing talent from an early age and demonstrates the impact of our Talent Development Programme in providing learners with opportunities to identify, develop, and showcase their abilities in a supportive environment.
 
-We also proudly recognise the efforts of our CPS girls’ and boys’ teams, who represented their schools with great pride, commitment, and determination throughout the competition. Both teams finished fourth after competitive performances in their respective third-place playoff matches. Although they narrowly missed out on medals, their participation was a testament to their courage, resilience, and willingness to give their best, values that remain central to our approach to learner development.
+![](/img/760369.jpg)
 
 The achievements of our teams were further complemented by individual recognition, as our learners received medals and certificates of participation from the federation in appreciation of their outstanding performances during the tournament. These awards represent more than just recognition; they celebrate the dedication, discipline, countless hours of training, and sacrifices made by our learners, coaches, teachers, and the entire support team throughout the season.
 
 Individual excellence was also celebrated, with two of our talented learners receiving Most Valuable Player (MVP) awards. Nabwami Sonia was named the U11 Girls’ MVP, while Kanadi Waleed was crowned the U13 Boys’ MVP following their exceptional performances, leadership, and valuable contributions to their respective teams. Their recognition serves as an inspiration to all our learners to continue pursuing excellence and making the most of their abilities.
+
+![](/img/760370.jpg)
+
+![](/img/760372.jpg)
 
 At Sir Apollo Kaggwa Schools, this achievement reflects our commitment to providing holistic education that develops the academic, physical, social, creative, and leadership abilities of every learner. We believe that true education extends beyond the classroom, and our approach is built on creating a balance between academic excellence and talent development. Through our Talent Development Programme, we provide structured opportunities for learners to explore their passions, strengthen their skills, and discover their full potential.
 
