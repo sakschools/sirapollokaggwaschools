@@ -1,6 +1,6 @@
 {
   "anniversary_image": {
-    "path": "/img/anniversary.jpeg",
+    "path": "/img/1196654.jpg",
     "alt": "School Anniversary Celebration"
   },
   "slides": [
@@ -8,7 +8,7 @@
       "image": "/img/1196461.jpg",
       "alt": "#2027Intake",
       "content": {
-        "topic": "#2027Intake ",
+        "topic": "",
         "description": "#2027Intake "
       }
     },
