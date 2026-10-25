@@ -28,19 +28,17 @@ Katja won gold in 2:40.42, Mushira took silver in 2:41.32, and Kenya’s Hassan 
 
 Across her three races, Audrey collected two bronze medals and recorded three personal bests. For a swimmer making her first appearance at the championships, the results provided a valuable combination of medal-winning success, experience and measurable improvement.
 
-> “I am proud to represent my country this year. Being the first time makes it extra special. This is just the beginning of what's to come,” 
->
-> Audrey said.
+> “I am proud to represent my country this year. Being the first time makes it extra special. This is just the beginning of what's to come,” - **Audrey said**.
 
-Her performance in Kampala builds on a promising record at school-level competitions. In 2025, she won individual medals at the National Primary Schools Swimming Gala and emerged as the best performer for Sir Apollo Kaggwa Primary School Kira.
+Her performance in Kampala builds on a promising record at school-level competitions. In 2025, she won individual medals at the National Primary Schools Swimming Gala and emerged as the best performer for Sir Apollo Kaggwa Schools.
 
-She also won all her races at the Sir Apollo Kaggwa Schools and City Parents’ School Annual Swimming Gala, helping our Kira campus finish third overall. Sir Apollo Kaggwa Primary School Mengo emerged as champions, while Nakasero finished as runners-up.
+She also won all her races at the **Sir Apollo Kaggwa Schools and City Parents’ School Annual Swimming Gala**, helping our Kira campus finish third overall. Sir Apollo Kaggwa Primary School Nakasero emerged as champions, while Sir Apollo Kaggwa Primary School Mengo finished as runners-up.
 
 Audrey’s progress is particularly encouraging because she moved from the 9–10 age category into the 12-and-under group this year. The transition has brought her into competition with older swimmers, requiring her to adapt to stronger opposition while continuing to refine her technique.
 
 Her results in Kampala suggest she is responding well to that challenge. Improving her times in every event while winning two medals for Uganda is a strong foundation for her continued development, and we are proud to see her represent both our school community and her country.
 
-Audrey is not the only swimmer with connections to Sir Apollo Kaggwa Schools making an impression at the championships. Former pupil Muganzi Tyra, who completed her primary education at Fairways Primary School Kireka, is also representing Uganda at this year’s competition.
+Audrey is not the only swimmer with connections to Sir Apollo Kaggwa Schools making an impression at the championships. Former learner and swimmer Muganzi Tyra, who completed her primary education at Fairways Primary School Kireka, is also representing Uganda at this year’s competition.
 
 Tyra enjoyed an outstanding campaign at the 2025 Africa Aquatics Zone III Championships in Nairobi, Kenya. She finished as the second-best swimmer in the girls’ 13–14 age category with 19 medal points, demonstrating her strength across several events.
 
@@ -48,7 +46,7 @@ Her individual medals included gold in the 50-metre, 100-metre and 200-metre but
 
 Now competing in the 15–16 age category, Tyra has continued to perform strongly against older swimmers, winning five gold and two silver medals for Uganda this year. Her progress demonstrates the value of continued training and competitive exposure as young athletes advance through the age groups.
 
-Another former pupil, Husnah Kukundakwe, who attended Sir Apollo Kaggwa Primary School Mengo, also attended this year’s championships as a guest. Her own achievements have helped place Uganda’s swimming talent on the international map.
+Another former learner and swimmer , Husnah Kukundakwe, who attended Sir Apollo Kaggwa Primary School Mengo, also attended this year’s championships as a guest. Her own achievements have helped place Uganda’s swimming talent on the international map.
 
 Husnah made history at the 2026 Commonwealth Games in Glasgow by winning silver in the women’s SB8 100-metre breaststroke. The result secured Uganda’s first-ever Commonwealth Games swimming medal, marking a landmark achievement for the country’s aquatic sport.
 
@@ -64,7 +62,7 @@ Audrey’s achievement in swimming is part of a successful sporting year (2026) 
 
 Our girls’ team claimed silver after losing 34–24 to Hill Preparatory School in the championship decider, while our under-11 team secured bronze with a convincing 38–20 victory over the same school in the third-place playoff. These results reflect the commitment of our learners and the continued work of our Talent Development Programme in nurturing sporting ability from an early age.
 
-Our learners also represented us at the Father Grimes National Schools Chess Championship at Ntare School in Mbarara, where Sir Apollo Kaggwa Schools finished fifth. Participation across swimming, basketball and chess gives our pupils opportunities to develop different skills, discover their strengths and learn important lessons in teamwork, preparation and perseverance.
+Our learners also represented us at the 2026 Father Grimes National Schools Chess Championship at Ntare School in Mbarara, where Sir Apollo Kaggwa Schools finished fifth. Participation across swimming, basketball and chess gives our pupils opportunities to develop different skills, discover their strengths and learn important lessons in teamwork, preparation and perseverance.
 
 Audrey’s two bronze medals and three personal bests stand as a proud achievement for her family, Sir Apollo Kaggwa Schools, Sailfish Swimming Club and Uganda. We congratulate her on representing her country with distinction and recognise the contribution of everyone supporting her journey, including her family, teachers and club coaches.
 
