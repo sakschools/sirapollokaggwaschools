@@ -80,6 +80,8 @@ We also wish to acknowledge Sailfish Swim Club Kampala for its contribution to A
 
 Audrey’s progress also reflects the support of those around her. Her coaches guide her technical development, her teachers support her academic journey, and her parents encourage her ambitions. The combined encouragement she receives from home, school and her swimming club helps her balance education with the demands of competitive sport.
 
+![](/img/1346149.jpg)
+
 Audrey’s achievement in swimming is part of a successful sporting year (2026) for Sir Apollo Kaggwa Schools. Our boys’ basketball team won the 2026 FUBA Primary Schools League title after defeating Hill Preparatory School 47–44 in a closely contested final.
 
 Our girls’ team claimed silver after losing 34–24 to Hill Preparatory School in the championship decider, while our under-11 team secured bronze with a convincing 38–20 victory over the same school in the third-place playoff. These results reflect the commitment of our learners and the continued work of our Talent Development Programme in nurturing sporting ability from an early age.
