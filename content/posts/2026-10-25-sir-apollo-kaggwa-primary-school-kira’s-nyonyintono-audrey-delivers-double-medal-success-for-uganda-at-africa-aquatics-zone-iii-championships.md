@@ -22,15 +22,21 @@ Her medal-winning campaign began on day two in the 100-metre short-course butter
 
 Kenya’s Kimani Katja won gold in 1:11.92, while Uganda’s Nabatanzi Mushira secured silver in 1:12.88. Mushira, a student at Seroma High School and Uganda’s national champion in the girls’ under-12 100-metre butterfly, added another medal to the host nation’s tally.
 
+![](/img/1369855.jpg)
+
 Katja, Kenya’s national champion in the same event, continued her strong championships campaign after previously winning silver in the 400-metre individual medley. The competitive final provided Audrey with valuable experience against swimmers capable of producing fast times on the regional stage.
 
 Audrey returned to the podium in the girls’ 12-and-under 200-metre short-course freestyle, clocking 2:27.23 to secure her second bronze medal. She improved her previous best of 2:36.29 by an impressive 9.06 seconds, recording the largest time reduction among her three individual events.
+
+![](/img/1369856.jpg)
 
 Katja claimed gold in 2:26.41, while compatriot Diamtidis Athena took silver in 2:26.76. Audrey was Uganda’s only swimmer on the podium in this event, finishing just 0.47 seconds behind Athena and 0.82 seconds behind Katja.
 
 The narrow margins highlighted the competitiveness of the race and Audrey’s ability to challenge the leading swimmers. Her second medal also strengthened an encouraging campaign in which every individual appearance brought a new personal best.
 
 On day three, Audrey competed in the girls’ 12-and-under 200-metre short-course individual medley, finishing fourth in 2:49.07. Although she narrowly missed another medal, she improved her previous best of 2:53.00 by 3.93 seconds.
+
+![](/img/1369857.jpg)
 
 The individual medley tests a swimmer’s ability across butterfly, backstroke, breaststroke and freestyle. Audrey’s improved time therefore provided further evidence of her development across the different strokes and rounded off a productive championships campaign.
 
