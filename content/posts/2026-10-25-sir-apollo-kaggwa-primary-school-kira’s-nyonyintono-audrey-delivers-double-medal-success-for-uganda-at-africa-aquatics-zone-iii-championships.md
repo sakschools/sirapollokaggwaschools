@@ -8,6 +8,8 @@ Nyonyintono Audrey, a Primary Six pupil at Sir Apollo Kaggwa Primary School Kira
 
 Competing in the girls’ 12-and-under category, Audrey faced strong opposition from across the region. She earned podium finishes in the 100-metre butterfly and 200-metre freestyle before placing fourth in the 200-metre individual medley, demonstrating her versatility across three demanding events.
 
+![](/img/1366956.jpg)
+
 Her medal-winning campaign began on day two in the 100-metre short-course butterfly. Audrey clocked 1:14.53 to claim bronze for Uganda, improving her previous personal best of 1:17.48 by 2.95 seconds.
 
 Kenya’s Kimani Katja won gold in 1:11.92, while Uganda’s Nabatanzi Mushira secured silver in 1:12.88. Mushira, a pupil at Seroma High School and Uganda’s national champion in the girls’ under-12 100-metre butterfly, added another medal to the host nation’s tally.
@@ -30,6 +32,8 @@ Across her three races, Audrey collected two bronze medals and recorded three pe
 
 > “I am proud to represent my country this year. Being the first time makes it extra special. This is just the beginning of what's to come,” - **Audrey said**.
 
+![](/img/1365504.jpg)
+
 Her performance in Kampala builds on a promising record at school-level competitions. In 2025, she won individual medals at the National Primary Schools Swimming Gala and emerged as the best performer for Sir Apollo Kaggwa Schools.
 
 She also won all her races at the **Sir Apollo Kaggwa Schools and City Parents’ School Annual Swimming Gala**, helping our Kira campus finish third overall. Sir Apollo Kaggwa Primary School Nakasero emerged as champions, while Sir Apollo Kaggwa Primary School Mengo finished as runners-up.
@@ -41,6 +45,8 @@ Her results in Kampala suggest she is responding well to that challenge. Improvi
 Audrey is not the only swimmer with connections to Sir Apollo Kaggwa Schools making an impression at the championships. Former learner and swimmer Muganzi Tyra, who completed her primary education at Fairways Primary School Kireka, is also representing Uganda at this year’s competition.
 
 Tyra enjoyed an outstanding campaign at the 2025 Africa Aquatics Zone III Championships in Nairobi, Kenya. She finished as the second-best swimmer in the girls’ 13–14 age category with 19 medal points, demonstrating her strength across several events.
+
+![](/img/1366957.jpg)
 
 Her individual medals included gold in the 50-metre, 100-metre and 200-metre butterfly, alongside bronze in the 800-metre freestyle. She also contributed to Uganda’s relay success, helping the country win gold in the mixed under-14 4x50-metre medley relay and silver in both the girls’ 4x50-metre freestyle and medley relays.
 
