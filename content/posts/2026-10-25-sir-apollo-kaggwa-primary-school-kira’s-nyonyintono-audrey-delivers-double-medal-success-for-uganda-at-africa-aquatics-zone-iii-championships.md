@@ -52,9 +52,13 @@ Her individual medals included gold in the 50-metre, 100-metre and 200-metre but
 
 Now competing in the 15–16 age category, Tyra has continued to perform strongly against older swimmers, winning five gold and two silver medals for Uganda this year. Her progress demonstrates the value of continued training and competitive exposure as young athletes advance through the age groups.
 
+![](/img/1366989.jpg)
+
 Another former learner and swimmer , Husnah Kukundakwe, who attended Sir Apollo Kaggwa Primary School Mengo, also attended this year’s championships as a guest. Her own achievements have helped place Uganda’s swimming talent on the international map.
 
 Husnah made history at the 2026 Commonwealth Games in Glasgow by winning silver in the women’s SB8 100-metre breaststroke. The result secured Uganda’s first-ever Commonwealth Games swimming medal, marking a landmark achievement for the country’s aquatic sport.
+
+![](/img/1366996.jpg)
 
 The journeys of Audrey, Tyra and Husnah reflect different stages of sporting development, from school competitions to regional and international success. Their achievements provide young learners with inspiring examples of what can be accomplished through dedication, guidance and opportunities to compete.
 
