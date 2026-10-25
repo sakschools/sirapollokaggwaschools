@@ -4,6 +4,14 @@ title: Sir Apollo Kaggwa Primary School Kira’s Nyonyintono Audrey Delivers
 date: 2026-10-25T14:09:56+03:00
 thumbnail: /img/1365523.jpg
 ---
+<blockquote class="twitter-tweet">
+
+  <a href="https://twitter.com/SakSchools/status/2114399440974852340"></a>
+
+</blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Nyonyintono Audrey, a Primary Six pupil at Sir Apollo Kaggwa Primary School Kira, has delivered a memorable performance for Uganda at the XI Africa Aquatics Zone III Championships in Kampala, winning two bronze medals and setting three personal bests. Her achievement is a proud moment for Sir Apollo Kaggwa Schools and a reflection of the promise she continues to show as a young swimmer.
 
 Competing in the girls’ 12-and-under category, Audrey faced strong opposition from across the region. She earned podium finishes in the 100-metre butterfly and 200-metre freestyle before placing fourth in the 200-metre individual medley, demonstrating her versatility across three demanding events.
@@ -82,6 +90,6 @@ Audrey’s two bronze medals and three personal bests stand as a proud achieveme
 
 At Sir Apollo Kaggwa Schools, we remain committed to creating opportunities for every learner to explore their talents, develop their potential and pursue their ambitions alongside their education. Audrey’s success is a welcome reminder of the achievements young people can make when their abilities are nurtured and their efforts encouraged.
 
-```
+```html
 
 ```
